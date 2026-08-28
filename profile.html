@@ -4,254 +4,500 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>My Portfolio | ประวัติส่วนตัว</title>
-
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@300;400;500;600;700&family=Mali:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <title>Secret Garden | My Portfolio</title>
 
     <link rel="stylesheet" href="style.css">
 </head>
 
-<body>
+<body class="home-page">
 
-<header class="site-header">
-    <nav class="navbar container">
+    <!-- Decorative Background -->
+    <div class="aurora aurora-one"></div>
+    <div class="aurora aurora-two"></div>
 
-        <a href="index.html" class="logo">
-            <span class="logo-icon">🌿</span>
-            <span>My Portfolio</span>
-        </a>
+    <div class="stars">
+        <span></span><span></span><span></span><span></span>
+        <span></span><span></span><span></span><span></span>
+        <span></span><span></span><span></span><span></span>
+    </div>
 
-        <div class="nav-menu">
-            <a href="index.html" class="nav-link">หน้าแรก</a>
-            <a href="profile.html" class="nav-link active">ประวัติส่วนตัว</a>
-            <a href="education.html" class="nav-link">การศึกษา</a>
-            <a href="hobby.html" class="nav-link">งานอดิเรก</a>
-            <a href="contact.html" class="nav-link">ติดต่อ</a>
-        </div>
+    <!-- Navigation -->
+    <header class="site-header">
+        <nav class="navbar container">
 
-    </nav>
-</header>
+            <a href="index.html" class="brand">
+                <span class="brand-icon">🐱</span>
 
+                <span class="brand-text">
+                    <strong>Secret Garden</strong>
+                    <small>MY PORTFOLIO</small>
+                </span>
+            </a>
 
-<main>
+            <div class="nav-menu">
+                <a href="index.html" class="active">หน้าแรก</a>
+                <a href="profile.html">ประวัติ</a>
+                <a href="education.html">การศึกษา</a>
+                <a href="hobby.html">งานอดิเรก</a>
+                <a href="contact.html">ติดต่อ</a>
+            </div>
 
-    <section class="page-hero">
-
-        <div class="container page-hero-content">
-
-            <span class="small-label">ABOUT ME 🌱</span>
-
-            <h1>ประวัติส่วนตัว</h1>
-
-            <p>
-                มาทำความรู้จักตัวตนของฉันให้มากขึ้น
-            </p>
-
-        </div>
-
-        <div class="page-decoration">✿</div>
-
-    </section>
+        </nav>
+    </header>
 
 
-    <section class="section">
+    <main>
 
-        <div class="container">
+        <!-- HERO -->
+        <section class="hero-section">
 
-            <div class="profile-layout">
+            <div class="hero-paw paw-one">🐾</div>
+            <div class="hero-paw paw-two">🐾</div>
+            <div class="hero-lotus lotus-one">🪷</div>
+            <div class="hero-leaf leaf-one">🌿</div>
+            <div class="hero-sparkle sparkle-one">✦</div>
+            <div class="hero-sparkle sparkle-two">✧</div>
 
-                <div class="profile-photo-wrapper">
+            <div class="container hero-layout">
 
-                    <div class="profile-circle"></div>
+                <!-- Left -->
+                <div class="hero-content">
 
-                    <img
-                        class="profile-photo"
-                        src="https://placehold.co/600x700/DDF1E4/39755A?text=Profile"
-                        alt="รูปโปรไฟล์ของฉัน"
-                    >
-
-                    <div class="photo-label">
-                        🌿 That's me!
+                    <div class="magic-badge">
+                        <span>✦</span>
+                        WELCOME TO MY LITTLE WORLD
+                        <span>✦</span>
                     </div>
 
-                </div>
-
-
-                <div class="profile-info">
-
-                    <span class="small-label">NICE TO MEET YOU</span>
-
-                    <h2>เด็กหญิง จิรชยา แสนสัจจะ]</h2>
-
-                    <p class="profile-intro">
-                        สวัสดีค่ะ ฉันชื่อ
-                        <strong>จิรชยา แสนสัจจะ]</strong>
-                        เป็นนักเรียนชั้นมัธยมศึกษาปีที่ 3
-                        ฉันเป็นคนที่ชอบเรียนรู้สิ่งใหม่ ๆ
-                        และอยากพัฒนาตัวเองให้ดีขึ้นในทุกวัน
+                    <p class="hero-small-title">
+                        HELLO, I'M
                     </p>
 
+                    <h1>
+                        <span class="gradient-text">ปิม</span>
+                        <br>
+                        nice to meet you
+                    </h1>
 
-                    <div class="info-grid">
+                    <div class="hero-description">
+                        <span class="quote-mark">“</span>
 
-                        <div class="info-box">
-                            <span class="info-icon">👤</span>
-                            <div>
-                                <small>ชื่อเล่น</small>
-                                <strong>ปิม</strong>
-                            </div>
+                        <p>
+                            นักเรียนชั้นมัธยมศึกษาปีที่ 3
+                            ผู้กำลังเดินทางผ่านโลกแห่งการเรียนรู้
+                            ความฝัน และสิ่งใหม่ ๆ ในทุกวัน
+                        </p>
+                    </div>
+
+                    <div class="hero-buttons">
+
+                        <a href="profile.html" class="magic-button primary-button">
+                            <span>รู้จักฉันมากขึ้น</span>
+                            <b>✦</b>
+                        </a>
+
+                        <a href="hobby.html" class="magic-button secondary-button">
+                            <span>สำรวจโลกของฉัน</span>
+                            <b>→</b>
+                        </a>
+
+                    </div>
+
+                    <div class="hero-stats">
+
+                        <div class="hero-stat">
+                            <strong>03</strong>
+                            <span>มัธยมต้น</span>
                         </div>
 
-                        <div class="info-box">
-                            <span class="info-icon">🎂</span>
-                            <div>
-                                <small>อายุ</small>
-                                <strong>14 ปี</strong>
-                            </div>
+                        <div class="hero-stat">
+                            <strong>∞</strong>
+                            <span>พร้อมเรียนรู้</span>
                         </div>
 
-                        <div class="info-box">
-                            <span class="info-icon">📅</span>
-                            <div>
-                                <small>วันเกิด</small>
-                                <strong>10/05/2012</strong>
-                            </div>
-                        </div>
-
-                        <div class="info-box">
-                            <span class="info-icon">📍</span>
-                            <div>
-                                <small>จังหวัด</small>
-                                <strong>เชียงใหม่</strong>
-                            </div>
-                        </div>
-
-                        <div class="info-box">
-                            <span class="info-icon">🏫</span>
-                            <div>
-                                <small>โรงเรียน</small>
-                                <strong>จอมทอง</strong>
-                            </div>
-                        </div>
-
-                        <div class="info-box">
-                            <span class="info-icon">📚</span>
-                            <div>
-                                <small>ระดับชั้น</small>
-                                <strong>ม.3/2</strong>
-                            </div>
+                        <div class="hero-stat">
+                            <strong>100%</strong>
+                            <span>ความตั้งใจ</span>
                         </div>
 
                     </div>
 
                 </div>
 
-            </div>
 
-        </div>
+                <!-- Right -->
+                <div class="hero-art">
 
-    </section>
+                    <div class="orbit orbit-outer"></div>
+                    <div class="orbit orbit-middle"></div>
+                    <div class="orbit orbit-inner"></div>
+
+                    <div class="orbit-star star-a">✦</div>
+                    <div class="orbit-star star-b">✧</div>
+                    <div class="orbit-star star-c">✦</div>
+
+                    <div class="profile-blob">
+
+                        <div class="profile-glow"></div>
+
+                        <div class="profile-frame">
+
+                            <img
+                                src="https://placehold.co/700x850/16352A/E9FFE9?text=MY+PROFILE"
+                                alt="รูปโปรไฟล์ของฉัน"
+                            >
+
+                        </div>
+
+                    </div>
 
 
-    <section class="section soft-section">
+                    <div class="floating-magic-card magic-card-one">
 
-        <div class="container">
+                        <span class="floating-icon">🌱</span>
 
-            <div class="section-heading center">
-                <span class="small-label">WHO AM I?</span>
-                <h2>สิ่งที่เป็นตัวฉัน ✨</h2>
-            </div>
+                        <div>
+                            <strong>Dream & Grow</strong>
+                            <small>เติบโตขึ้นทุกวัน</small>
+                        </div>
 
-            <div class="personality-grid">
+                    </div>
 
-                <div class="personality-card">
-                    <span>🌱</span>
-                    <h3>ชอบเรียนรู้</h3>
-                    <p>
-                        สนุกกับการเรียนรู้เรื่องใหม่ ๆ
-                        และพร้อมที่จะลองสิ่งที่ไม่เคยทำ
-                    </p>
+
+                    <div class="floating-magic-card magic-card-two">
+
+                        <span class="floating-icon">📚</span>
+
+                        <div>
+                            <strong>Student Life</strong>
+                            <small>Learning Journey</small>
+                        </div>
+
+                    </div>
+
+
+                    <div class="floating-magic-card magic-card-three">
+
+                        <span class="floating-icon">🐱</span>
+
+                        <div>
+                            <strong>My World</strong>
+                            <small>Creative & Curious</small>
+                        </div>
+
+                    </div>
+
                 </div>
 
-                <div class="personality-card">
-                    <span>💡</span>
-                    <h3>ชอบคิด</h3>
+            </div>
+
+        </section>
+
+
+        <!-- MARQUEE -->
+        <section class="magic-marquee">
+
+            <div class="marquee-track">
+
+                <span>🌿 DREAM BIG</span>
+                <span>✦ KEEP LEARNING</span>
+                <span>🪷 STAY CURIOUS</span>
+                <span>🐾 BE YOURSELF</span>
+
+                <span>🌿 DREAM BIG</span>
+                <span>✦ KEEP LEARNING</span>
+                <span>🪷 STAY CURIOUS</span>
+                <span>🐾 BE YOURSELF</span>
+
+            </div>
+
+        </section>
+
+
+        <!-- ABOUT PREVIEW -->
+        <section class="section">
+
+            <div class="container">
+
+                <div class="section-intro">
+
+                    <div>
+                        <p class="section-label">CHAPTER 01</p>
+
+                        <h2>
+                            เรื่องราวเล็ก ๆ
+                            <br>
+                            <span>ของตัวฉัน</span>
+                        </h2>
+                    </div>
+
                     <p>
-                        สนุกกับการคิดไอเดีย
-                        และหาวิธีแก้ปัญหาต่าง ๆ
+                        เว็บไซต์นี้ไม่ใช่เพียงสถานที่รวบรวมข้อมูล
+                        แต่เป็นเหมือนสมุดบันทึกเล่มหนึ่ง
+                        ที่บอกเล่าเรื่องราว ความสนใจ
+                        และเส้นทางการเรียนรู้ของฉัน
                     </p>
+
                 </div>
 
-                <div class="personality-card">
-                    <span>🎨</span>
-                    <h3>สร้างสรรค์</h3>
-                    <p>
-                        ชอบออกแบบและสร้างผลงาน
-                        ในรูปแบบของตัวเอง
-                    </p>
+
+                <div class="portal-grid">
+
+                    <a href="profile.html" class="portal-card portal-profile">
+
+                        <span class="portal-number">01</span>
+
+                        <div class="portal-icon">🐱</div>
+
+                        <div class="portal-content">
+                            <p>DISCOVER</p>
+                            <h3>ตัวตนของฉัน</h3>
+                            <span>เปิดประตู →</span>
+                        </div>
+
+                    </a>
+
+
+                    <a href="education.html" class="portal-card portal-education">
+
+                        <span class="portal-number">02</span>
+
+                        <div class="portal-icon">🎓</div>
+
+                        <div class="portal-content">
+                            <p>EXPLORE</p>
+                            <h3>เส้นทางการศึกษา</h3>
+                            <span>เดินทางต่อ →</span>
+                        </div>
+
+                    </a>
+
+
+                    <a href="hobby.html" class="portal-card portal-hobby">
+
+                        <span class="portal-number">03</span>
+
+                        <div class="portal-icon">🎮</div>
+
+                        <div class="portal-content">
+                            <p>ENJOY</p>
+                            <h3>โลกของงานอดิเรก</h3>
+                            <span>เข้าชม →</span>
+                        </div>
+
+                    </a>
+
                 </div>
 
             </div>
 
-        </div>
-
-    </section>
+        </section>
 
 
-    <section class="section">
+        <!-- FEATURED QUOTE -->
+        <section class="forest-section">
 
-        <div class="container">
+            <div class="forest-moon">🌙</div>
+            <div class="forest-leaf forest-leaf-one">🌿</div>
+            <div class="forest-leaf forest-leaf-two">🍃</div>
+            <div class="forest-lotus">🪷</div>
 
-            <div class="quote-box">
+            <div class="container">
 
-                <span class="quote-icon">“</span>
+                <div class="forest-content">
+
+                    <p class="section-label light-label">
+                        A LITTLE MESSAGE
+                    </p>
+
+                    <h2>
+                        “ทุกคนมีจุดเริ่มต้น
+                        <br>
+                        และฉันกำลังสร้าง
+                        <span>เส้นทางของตัวเอง</span>”
+                    </h2>
+
+                    <p>
+                        แม้วันนี้อาจยังเป็นเพียงนักเรียนคนหนึ่ง
+                        แต่ทุกสิ่งที่ได้เรียนรู้ในวันนี้
+                        อาจกลายเป็นก้าวสำคัญของอนาคต
+                    </p>
+
+                    <a href="education.html" class="light-button">
+                        ดูเส้นทางของฉัน ✦
+                    </a>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- HIGHLIGHT -->
+        <section class="section">
+
+            <div class="container">
+
+                <div class="highlight-top">
+
+                    <div>
+                        <p class="section-label">MY LITTLE UNIVERSE</p>
+                        <h2>สิ่งเล็ก ๆ ที่มีความหมาย</h2>
+                    </div>
+
+                    <span class="giant-sparkle">✦</span>
+
+                </div>
+
+
+                <div class="universe-grid">
+
+                    <article class="universe-card">
+
+                        <div class="card-orbit"></div>
+
+                        <span class="universe-icon">💡</span>
+
+                        <h3>เรียนรู้</h3>
+
+                        <p>
+                            สนุกกับการค้นพบสิ่งใหม่
+                            และพัฒนาตัวเองอยู่เสมอ
+                        </p>
+
+                    </article>
+
+
+                    <article class="universe-card featured-universe">
+
+                        <div class="featured-star">✦</div>
+
+                        <span class="universe-icon">🌱</span>
+
+                        <h3>เติบโต</h3>
+
+                        <p>
+                            ทุกประสบการณ์คือโอกาส
+                            ที่ทำให้ฉันเติบโตขึ้น
+                        </p>
+
+                    </article>
+
+
+                    <article class="universe-card">
+
+                        <div class="card-orbit"></div>
+
+                        <span class="universe-icon">🎨</span>
+
+                        <h3>สร้างสรรค์</h3>
+
+                        <p>
+                            ชอบทดลองไอเดียใหม่ ๆ
+                            และสร้างสิ่งที่เป็นตัวเอง
+                        </p>
+
+                    </article>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- FINAL CTA -->
+        <section class="section cta-section">
+
+            <div class="container">
+
+                <div class="grand-cta">
+
+                    <div class="cta-decoration cta-cat">🐱</div>
+                    <div class="cta-decoration cta-flower">🪷</div>
+                    <div class="cta-decoration cta-star">✦</div>
+
+                    <p class="section-label">NEXT CHAPTER</p>
+
+                    <h2>
+                        พร้อมจะรู้จักฉัน
+                        <span>มากกว่านี้หรือยัง?</span>
+                    </h2>
+
+                    <p>
+                        เดินทางต่อไปยังโลกของฉัน
+                        แล้วมาทำความรู้จักกันให้มากขึ้น
+                    </p>
+
+                    <a href="profile.html" class="magic-button primary-button">
+                        เริ่มต้นการเดินทาง ✦
+                    </a>
+
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <footer class="site-footer">
+
+        <div class="container footer-grid">
+
+            <div class="footer-main">
+
+                <a href="index.html" class="brand footer-brand">
+                    <span class="brand-icon">🐱</span>
+
+                    <span class="brand-text">
+                        <strong>Secret Garden</strong>
+                        <small>MY STUDENT PORTFOLIO</small>
+                    </span>
+                </a>
 
                 <p>
-                    ทุกวันคือโอกาสที่จะได้เรียนรู้สิ่งใหม่
-                    และฉันอยากใช้เวลาของตัวเองให้ดีที่สุด
+                    พื้นที่เล็ก ๆ สำหรับบอกเล่าเรื่องราว
+                    ของนักเรียนคนหนึ่งที่กำลังเรียนรู้
+                    และเติบโตในทุก ๆ วัน
                 </p>
 
-                <span class="quote-leaf">🌿</span>
+            </div>
+
+
+            <div class="footer-column">
+
+                <h4>EXPLORE</h4>
+
+                <a href="index.html">หน้าแรก</a>
+                <a href="profile.html">ประวัติส่วนตัว</a>
+                <a href="education.html">การศึกษา</a>
+                <a href="hobby.html">งานอดิเรก</a>
+
+            </div>
+
+
+            <div class="footer-column">
+
+                <h4>STUDENT</h4>
+
+                <p>เด็กหญิง จิรชยา แสนสัจจะ</p>
+                <p>ม.3/2</p>
+                <p>โรงเรียนจอมทอง</p>
 
             </div>
 
         </div>
 
-    </section>
 
-</main>
-
-
-<footer class="footer">
-
-    <div class="container footer-content">
-
-        <div class="footer-brand">
-            <div class="logo footer-logo">
-                <span class="logo-icon">🌿</span>
-                <span>My Portfolio</span>
-            </div>
-
-            <p>Portfolio ของนักเรียนชั้นมัธยมศึกษาปีที่ 3</p>
+        <div class="footer-bottom">
+            <span>© 2026 Secret Garden Portfolio</span>
+            <span>Made with 🌿 ✦ 🐱</span>
         </div>
 
-        <div class="footer-links">
-            <a href="index.html">หน้าแรก</a>
-            <a href="profile.html">ประวัติส่วนตัว</a>
-            <a href="education.html">การศึกษา</a>
-            <a href="hobby.html">งานอดิเรก</a>
-            <a href="contact.html">ติดต่อ</a>
-        </div>
-
-    </div>
-
-    <div class="footer-bottom">
-        <p>© 2026 jpeem· Made with ♡ and 🌿</p>
-    </div>
-
-</footer>
+    </footer>
 
 </body>
 </html>
