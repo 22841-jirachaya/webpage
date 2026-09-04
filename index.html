@@ -3,255 +3,84 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <title>My Journal | Portfolio</title>
-
+    <title>My Scrapbook Journal - Home</title>
     <link rel="stylesheet" href="style.css">
-
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-
-    <link href="https://fonts.googleapis.com/css2?family=Kalam:wght@400;700&family=Nunito:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Charm:wght@400;700&family=Prompt:wght@300;400;600;800&display=swap" rel="stylesheet">
 </head>
-
 <body>
 
-<header class="site-header">
+    <div class="custom-cursor"></div>
+
+    <!-- Navigation Menu -->
     <nav class="navbar">
-
-        <a href="index.html" class="logo">
-            <span class="logo-icon">🌿</span>
-            <span>My Journal</span>
-        </a>
-
-        <div class="nav-links">
-            <a href="index.html" class="active">หน้าแรก</a>
-            <a href="profile.html">ประวัติส่วนตัว</a>
-            <a href="education.html">การศึกษา</a>
-            <a href="hobby.html">งานอดิเรก</a>
-            <a href="contact.html">ติดต่อ</a>
-        </div>
-
+        <div class="nav-brand">✨ MY JOURNAL</div>
+        <ul class="nav-links">
+            <li><a href="index.html" class="nav-btn active">Cover</a></li>
+            <li><a href="profile.html" class="nav-btn">Profile</a></li>
+            <li><a href="education.html" class="nav-btn">Education</a></li>
+            <li><a href="hobby.html" class="nav-btn">Hobbies</a></li>
+            <li><a href="contact.html" class="nav-btn">Contact</a></li>
+        </ul>
     </nav>
-</header>
 
-<main>
-
-    <!-- HERO -->
-
-    <section class="hero section">
-
-        <div class="hero-doodle doodle-1">✦</div>
-        <div class="hero-doodle doodle-2">♡</div>
-        <div class="hero-doodle doodle-3">✎</div>
-
-        <div class="hero-content reveal">
-
-            <div class="small-label">
-                📖 MY PERSONAL JOURNAL
+    <!-- Main Content -->
+    <main class="scrapbook-container">
+        <section class="page-section">
+            <div class="journal-cover tilt-card">
+                <div class="tape tape-top-left"></div>
+                <div class="tape tape-top-right"></div>
+                <div class="badge-sticker">TOP SECRET 🔒</div>
+                <h1 class="cover-title">MEMORIES & DREAMS</h1>
+                <p class="cover-subtitle">ยินดีต้อนรับสู่ไดอารี่สุดอลังการของฉัน 🎨✨</p>
+                <div class="sticker-group">
+                    <span class="draggable-sticker">🎀</span>
+                    <span class="draggable-sticker">⭐</span>
+                    <span class="draggable-sticker">🌸</span>
+                </div>
+                <br><br>
+                <a href="profile.html" class="cta-btn">OPEN DIARY 📖</a>
             </div>
+        </section>
+    </main>
 
-            <p class="hand-note">
-                Hello! 👋 ยินดีที่ได้รู้จัก
-            </p>
+    <script>
+        // Custom Cursor & Sparkle Effects
+        const cursor = document.querySelector('.custom-cursor');
+        const sparkles = ['✨', '⭐', '🌸', '💖', '💫'];
 
-            <h1>
-                <span>สวัสดีครับ/ค่ะ</span><br>
-                ฉันคือ <strong>[กรอกชื่อ]</strong>
-            </h1>
+        document.addEventListener('mousemove', (e) => {
+            cursor.style.left = e.clientX + 'px';
+            cursor.style.top = e.clientY + 'px';
 
-            <p class="hero-description">
-                นักเรียนชั้นมัธยมศึกษาปีที่ 3
-                ที่ชอบเรียนรู้สิ่งใหม่ ๆ
-                สนุกกับการสร้างสรรค์ผลงาน
-                และกำลังบันทึกเรื่องราวของตัวเอง
-                ผ่านเว็บไซต์เล่มนี้ 🌱
-            </p>
+            if (Math.random() < 0.2) {
+                const sparkle = document.createElement('span');
+                sparkle.classList.add('sparkle');
+                sparkle.innerText = sparkles[Math.floor(Math.random() * sparkles.length)];
+                sparkle.style.left = e.clientX + 'px';
+                sparkle.style.top = e.clientY + 'px';
+                sparkle.style.setProperty('--dx', (Math.random() - 0.5) * 60 + 'px');
+                sparkle.style.setProperty('--dy', (Math.random() - 0.5) * 60 + 'px');
+                document.body.appendChild(sparkle);
+                setTimeout(() => sparkle.remove(), 1000);
+            }
+        });
 
-            <div class="hero-buttons">
-
-                <a href="profile.html" class="btn btn-primary">
-                    รู้จักฉันมากขึ้น →
-                </a>
-
-                <a href="hobby.html" class="btn btn-outline">
-                    🎨 ดูงานอดิเรกของฉัน
-                </a>
-
-            </div>
-
-            <div class="hero-stats">
-
-                <div>
-                    <strong>M.3</strong>
-                    <span>ระดับชั้น</span>
-                </div>
-
-                <div>
-                    <strong>📚</strong>
-                    <span>Student</span>
-                </div>
-
-                <div>
-                    <strong>🌱</strong>
-                    <span>Keep Growing</span>
-                </div>
-
-            </div>
-
-        </div>
-
-
-        <div class="hero-visual reveal">
-
-            <div class="journal-paper">
-
-                <div class="tape tape-top"></div>
-
-                <div class="paper-header">
-                    <span>MY JOURNAL</span>
-                    <span>2026 ✦</span>
-                </div>
-
-                <div class="profile-frame">
-                    <img
-                        src="https://placehold.co/600x700/edf7ee/245c45?text=YOUR+PHOTO"
-                        alt="รูปโปรไฟล์ของฉัน"
-                    >
-                </div>
-
-                <div class="paper-caption">
-                    <span>📌 this is me!</span>
-                    <span>♡</span>
-                </div>
-
-                <div class="paper-line"></div>
-
-                <p class="journal-text">
-                    "ทุกวันคืออีกหนึ่งหน้าของเรื่องราว
-                    ที่กำลังเขียนขึ้นด้วยตัวเราเอง"
-                </p>
-
-                <div class="sticker sticker-smile">😊</div>
-                <div class="sticker sticker-leaf">🍃</div>
-
-            </div>
-
-            <div class="circle-decoration circle-one"></div>
-            <div class="circle-decoration circle-two"></div>
-
-        </div>
-
-    </section>
-
-
-    <!-- INTRO -->
-
-    <section class="paper-section">
-
-        <div class="section-title reveal">
-            <span class="eyebrow">01 / ABOUT THIS JOURNAL</span>
-            <h2>บันทึกเล่มนี้เกี่ยวกับฉัน 📔</h2>
-            <p>
-                เว็บไซต์เล็ก ๆ ที่รวมเรื่องราว ตัวตน
-                การเรียน งานอดิเรก และสิ่งที่ฉันสนใจ
-            </p>
-        </div>
-
-        <div class="intro-grid">
-
-            <article class="note-card green-note reveal">
-                <span class="pin">📌</span>
-                <div class="card-icon">🌱</div>
-                <h3>About Me</h3>
-                <p>
-                    ทำความรู้จักกับตัวฉัน
-                    ความชอบ บุคลิก และเรื่องราวเล็ก ๆ
-                    ที่อยากแบ่งปัน
-                </p>
-                <a href="profile.html">เปิดหน้าประวัติ →</a>
-            </article>
-
-            <article class="note-card cream-note reveal">
-                <span class="pin">⭐</span>
-                <div class="card-icon">🎓</div>
-                <h3>My Education</h3>
-                <p>
-                    บันทึกเส้นทางการเรียน
-                    ตั้งแต่ระดับประถมจนถึงปัจจุบัน
-                </p>
-                <a href="education.html">ดูการศึกษา →</a>
-            </article>
-
-            <article class="note-card yellow-note reveal">
-                <span class="pin">💡</span>
-                <div class="card-icon">🎨</div>
-                <h3>My Hobbies</h3>
-                <p>
-                    รวมกิจกรรม งานอดิเรก
-                    และสิ่งที่ฉันสนใจในเวลาว่าง
-                </p>
-                <a href="hobby.html">ดูงานอดิเรก →</a>
-            </article>
-
-        </div>
-
-    </section>
-
-
-    <!-- QUOTE -->
-
-    <section class="quote-section">
-
-        <div class="quote-tape"></div>
-
-        <div class="quote-content">
-            <span>💭 LITTLE NOTE</span>
-            <h2>
-                "ไม่ต้องเก่งที่สุด<br>
-                แค่พยายามเติบโตขึ้นทุกวันก็พอ 🌿"
-            </h2>
-            <p>— My Journal, 2026</p>
-        </div>
-
-    </section>
-
-</main>
-
-
-<footer class="footer">
-
-    <div class="footer-main">
-
-        <div>
-            <div class="footer-logo">
-                🌿 My Journal
-            </div>
-
-            <p>
-                Student Portfolio Website<br>
-                บันทึกเรื่องราวของนักเรียน ม.3
-            </p>
-        </div>
-
-        <div class="footer-links">
-
-            <a href="index.html">หน้าแรก</a>
-            <a href="profile.html">ประวัติส่วนตัว</a>
-            <a href="education.html">การศึกษา</a>
-            <a href="hobby.html">งานอดิเรก</a>
-            <a href="contact.html">ติดต่อ</a>
-
-        </div>
-
-    </div>
-
-    <div class="footer-bottom">
-        <span>© 2026 [กรอกชื่อ]</span>
-        <span>Made with 💚 & creativity</span>
-    </div>
-
-</footer>
-
+        // 3D Tilt Card
+        document.querySelectorAll('.tilt-card').forEach(card => {
+            card.addEventListener('mousemove', (e) => {
+                const rect = card.getBoundingClientRect();
+                const x = e.clientX - rect.left;
+                const y = e.clientY - rect.top;
+                const centerX = rect.width / 2;
+                const centerY = rect.height / 2;
+                const rotateX = ((y - centerY) / centerY) * -10;
+                const rotateY = ((x - centerX) / centerX) * 10;
+                card.style.transform = `perspective(1000px) rotateX(${rotateX}deg) rotateY(${rotateY}deg) scale3d(1.02, 1.02, 1.02)`;
+            });
+            card.addEventListener('mouseleave', () => {
+                card.style.transform = 'perspective(1000px) rotateX(0deg) rotateY(0deg) scale3d(1, 1, 1)';
+            });
+        });
+    </script>
 </body>
 </html>
