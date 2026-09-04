@@ -3,84 +3,284 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Scrapbook Journal - Home</title>
+    <meta name="description" content="My Little Journal - Cute Nature Journal Student Portfolio">
+    <title>My Little Journal | หน้าแรก</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Itim&family=Mali:wght@400;500;600;700&family=Nunito:wght@400;500;600;700;800&family=Prompt:wght@400;500;600;700&display=swap" rel="stylesheet">
+
     <link rel="stylesheet" href="style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Charm:wght@400;700&family=Prompt:wght@300;400;600;800&display=swap" rel="stylesheet">
 </head>
-<body>
 
-    <div class="custom-cursor"></div>
+<body class="home-page">
 
-    <!-- Navigation Menu -->
-    <nav class="navbar">
-        <div class="nav-brand">✨ MY JOURNAL</div>
-        <ul class="nav-links">
-            <li><a href="index.html" class="nav-btn active">Cover</a></li>
-            <li><a href="profile.html" class="nav-btn">Profile</a></li>
-            <li><a href="education.html" class="nav-btn">Education</a></li>
-            <li><a href="hobby.html" class="nav-btn">Hobbies</a></li>
-            <li><a href="contact.html" class="nav-btn">Contact</a></li>
-        </ul>
-    </nav>
+    <div class="background-leaf leaf-one">🍃</div>
+    <div class="background-leaf leaf-two">🌿</div>
+    <div class="background-flower flower-one">🌼</div>
 
-    <!-- Main Content -->
-    <main class="scrapbook-container">
-        <section class="page-section">
-            <div class="journal-cover tilt-card">
-                <div class="tape tape-top-left"></div>
-                <div class="tape tape-top-right"></div>
-                <div class="badge-sticker">TOP SECRET 🔒</div>
-                <h1 class="cover-title">MEMORIES & DREAMS</h1>
-                <p class="cover-subtitle">ยินดีต้อนรับสู่ไดอารี่สุดอลังการของฉัน 🎨✨</p>
-                <div class="sticker-group">
-                    <span class="draggable-sticker">🎀</span>
-                    <span class="draggable-sticker">⭐</span>
-                    <span class="draggable-sticker">🌸</span>
+    <header class="site-header">
+        <nav class="navbar container" aria-label="เมนูหลัก">
+
+            <a class="brand" href="index.html" aria-label="กลับไปหน้าแรก">
+                <span class="brand-icon">🌿</span>
+                <span>
+                    <strong>My Little Journal</strong>
+                    <small>Student Portfolio</small>
+                </span>
+            </a>
+
+            <input type="checkbox" id="menu-toggle" class="menu-toggle">
+            <label for="menu-toggle" class="menu-button" aria-label="เปิดเมนู">
+                <span></span>
+                <span></span>
+                <span></span>
+            </label>
+
+            <ul class="nav-links">
+                <li>
+                    <a class="active" href="index.html">
+                        <span>🏡</span> หน้าแรก
+                    </a>
+                </li>
+                <li>
+                    <a href="profile.html">
+                        <span>👤</span> ประวัติส่วนตัว
+                    </a>
+                </li>
+                <li>
+                    <a href="education.html">
+                        <span>🎓</span> การศึกษา
+                    </a>
+                </li>
+                <li>
+                    <a href="hobby.html">
+                        <span>🌱</span> งานอดิเรก
+                    </a>
+                </li>
+                <li>
+                    <a href="contact.html">
+                        <span>💌</span> ติดต่อ
+                    </a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+
+        <!-- HERO -->
+        <section class="hero section container">
+
+            <div class="hero-content reveal">
+                <span class="eyebrow">
+                    🌱 Welcome to my little world
+                </span>
+
+                <p class="hero-greeting">Hello, I'm...</p>
+
+                <h1>
+                    <span>[กรอกชื่อ]</span>
+                </h1>
+
+                <p class="hero-subtitle">
+                    A student who loves learning, creating and discovering new things.
+                </p>
+
+                <p class="hero-description">
+                    ยินดีต้อนรับสู่สมุดบันทึกเล่มเล็ก ๆ ของฉัน
+                    ที่รวบรวมเรื่องราวเกี่ยวกับตัวตน การเรียนรู้
+                    งานอดิเรก และความทรงจำที่อยากแบ่งปัน
+                </p>
+
+                <div class="hero-actions">
+                    <a class="btn btn-primary" href="profile.html">
+                        🌱 รู้จักฉันมากขึ้น
+                    </a>
+
+                    <a class="btn btn-secondary" href="hobby.html">
+                        📖 เปิด Journal ของฉัน
+                    </a>
                 </div>
-                <br><br>
-                <a href="profile.html" class="cta-btn">OPEN DIARY 📖</a>
+
+                <div class="tiny-note">
+                    <span>📅</span>
+                    <span>My little corner • 2026</span>
+                </div>
+            </div>
+
+            <div class="hero-visual reveal delay-1">
+
+                <div class="hero-doodle doodle-cloud">☁️</div>
+                <div class="hero-doodle doodle-flower">🌼</div>
+                <div class="hero-doodle doodle-butterfly">🦋</div>
+                <div class="hero-doodle doodle-leaf">🍃</div>
+
+                <div class="profile-frame">
+                    <div class="tape tape-top"></div>
+
+                    <div class="profile-image-wrap">
+                        <img
+                            src="https://placehold.co/600x700/E8F5E9/2E7D32?text=Profile+Photo"
+                            alt="รูปโปรไฟล์ตัวอย่างของ [กรอกชื่อ]"
+                        >
+                    </div>
+
+                    <div class="profile-caption">
+                        <span>🌿</span>
+                        <span>just me, growing</span>
+                        <span>🌱</span>
+                    </div>
+                </div>
+
+                <div class="sticker sticker-sun">☀️</div>
+                <div class="sticker sticker-heart">♡</div>
+            </div>
+
+        </section>
+
+        <!-- ABOUT HIGHLIGHTS -->
+        <section class="section highlights-section">
+            <div class="container">
+
+                <div class="section-heading center reveal">
+                    <span class="section-kicker">A tiny introduction</span>
+                    <h2>A Little About Me 🌿</h2>
+                    <p>เรื่องเล็ก ๆ 4 อย่างที่บอกความเป็นฉัน</p>
+                </div>
+
+                <div class="highlight-grid">
+
+                    <article class="highlight-card card-green reveal">
+                        <span class="card-number">01</span>
+                        <div class="highlight-icon">🎓</div>
+                        <h3>ม.3</h3>
+                        <p>นักเรียนมัธยมศึกษาปีที่ 3 ที่กำลังเรียนรู้สิ่งใหม่ ๆ</p>
+                    </article>
+
+                    <article class="highlight-card card-yellow reveal delay-1">
+                        <span class="card-number">02</span>
+                        <div class="highlight-icon">🌱</div>
+                        <h3>ชอบเรียนรู้</h3>
+                        <p>สนุกกับการค้นพบความรู้และทดลองทำสิ่งที่ไม่เคยทำ</p>
+                    </article>
+
+                    <article class="highlight-card card-pink reveal delay-2">
+                        <span class="card-number">03</span>
+                        <div class="highlight-icon">🎮</div>
+                        <h3>ชอบเล่นเกม</h3>
+                        <p>เกมเป็นอีกหนึ่งกิจกรรมที่ช่วยให้ผ่อนคลายในเวลาว่าง</p>
+                    </article>
+
+                    <article class="highlight-card card-blue reveal delay-3">
+                        <span class="card-number">04</span>
+                        <div class="highlight-icon">💻</div>
+                        <h3>สนใจเทคโนโลยี</h3>
+                        <p>ชอบเรียนรู้เรื่องคอมพิวเตอร์และการสร้างสรรค์ผลงานดิจิทัล</p>
+                    </article>
+
+                </div>
             </div>
         </section>
+
+        <!-- JOURNAL -->
+        <section class="section journal-section container">
+
+            <div class="journal-paper reveal">
+
+                <div class="paper-tape"></div>
+                <span class="paper-clip">📎</span>
+
+                <div class="journal-top">
+                    <div>
+                        <span class="section-kicker">My personal note</span>
+                        <h2>Today's Journal 📖</h2>
+                    </div>
+
+                    <div class="date-stamp">
+                        <span>DATE</span>
+                        <strong>04</strong>
+                        <small>SEP • 2026</small>
+                    </div>
+                </div>
+
+                <div class="journal-rule"></div>
+
+                <div class="journal-body">
+                    <p class="handwriting">Dear visitor...</p>
+
+                    <p>
+                        สวัสดี! ฉันเป็นนักเรียนคนหนึ่งที่ชอบเรียนรู้สิ่งใหม่ ๆ
+                        ชอบใช้เวลาว่างกับงานอดิเรก และสนุกกับการสร้างผลงานต่าง ๆ
+                    </p>
+
+                    <p>
+                        เว็บไซต์เล่มนี้เป็นพื้นที่เล็ก ๆ ที่ฉันตั้งใจสร้างขึ้น
+                        เพื่อเล่าเรื่องราวเกี่ยวกับตัวเอง การเรียน
+                        สิ่งที่สนใจ และช่วงเวลาที่มีความหมาย
+                    </p>
+
+                    <div class="journal-meta">
+                        <span>🌤️ Mood: Curious & Happy</span>
+                        <span>🌿 Small Note: Keep growing!</span>
+                    </div>
+                </div>
+
+                <div class="journal-doodle">🌼</div>
+            </div>
+
+        </section>
+
+        <!-- CTA -->
+        <section class="section mini-cta">
+            <div class="container">
+                <div class="cta-box reveal">
+                    <div>
+                        <span class="section-kicker">Keep exploring</span>
+                        <h2>อยากรู้จักฉันมากขึ้นไหม? 🌱</h2>
+                        <p>ลองเปิดหน้าถัดไป แล้วเดินทางไปกับ Journal ของฉันกันเลย</p>
+                    </div>
+
+                    <a class="btn btn-primary" href="profile.html">
+                        เปิดหน้าถัดไป →
+                    </a>
+                </div>
+            </div>
+        </section>
+
     </main>
 
-    <script>
-        // Custom Cursor & Sparkle Effects
-        const cursor = document.querySelector('.custom-cursor');
-        const sparkles = ['✨', '⭐', '🌸', '💖', '💫'];
+    <footer class="site-footer">
+        <div class="footer-decoration">🌿 ───────── 🌿</div>
 
-        document.addEventListener('mousemove', (e) => {
-            cursor.style.left = e.clientX + 'px';
-            cursor.style.top = e.clientY + 'px';
+        <div class="container footer-content">
 
-            if (Math.random() < 0.2) {
-                const sparkle = document.createElement('span');
-                sparkle.classList.add('sparkle');
-                sparkle.innerText = sparkles[Math.floor(Math.random() * sparkles.length)];
-                sparkle.style.left = e.clientX + 'px';
-                sparkle.style.top = e.clientY + 'px';
-                sparkle.style.setProperty('--dx', (Math.random() - 0.5) * 60 + 'px');
-                sparkle.style.setProperty('--dy', (Math.random() - 0.5) * 60 + 'px');
-                document.body.appendChild(sparkle);
-                setTimeout(() => sparkle.remove(), 1000);
-            }
-        });
+            <div class="footer-brand">
+                <span class="footer-logo">🌱</span>
+                <div>
+                    <h2>My Little Journal</h2>
+                    <p>[กรอกชื่อ] • นักเรียนชั้น ม.3</p>
+                </div>
+            </div>
 
-        // 3D Tilt Card
-        document.querySelectorAll('.tilt-card').forEach(card => {
-            card.addEventListener('mousemove', (e) => {
-                const rect = card.getBoundingClientRect();
-                const x = e.clientX - rect.left;
-                const y = e.clientY - rect.top;
-                const centerX = rect.width / 2;
-                const centerY = rect.height / 2;
-                const rotateX = ((y - centerY) / centerY) * -10;
-                const rotateY = ((x - centerX) / centerX) * 10;
-                card.style.transform = `perspective(1000px) rotateX(${rotateX}deg) rotateY(${rotateY}deg) scale3d(1.02, 1.02, 1.02)`;
-            });
-            card.addEventListener('mouseleave', () => {
-                card.style.transform = 'perspective(1000px) rotateX(0deg) rotateY(0deg) scale3d(1, 1, 1)';
-            });
-        });
-    </script>
+            <p class="footer-motto">
+                “Learning • Creating • Growing”
+            </p>
+
+            <nav class="footer-nav" aria-label="เมนูส่วนท้าย">
+                <a href="index.html">หน้าแรก</a>
+                <a href="profile.html">ประวัติส่วนตัว</a>
+                <a href="education.html">การศึกษา</a>
+                <a href="hobby.html">งานอดิเรก</a>
+                <a href="contact.html">ติดต่อ</a>
+            </nav>
+
+            <p class="copyright">
+                Copyright © 2026 My Little Journal. Made with 🌿 &amp; creativity.
+            </p>
+
+        </div>
+    </footer>
+
 </body>
 </html>
