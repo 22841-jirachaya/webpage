@@ -1,102 +1,95 @@
 <!DOCTYPE html>
 <html lang="th">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>หน้าแรก | Portfolio นักเรียน ม.3</title>
-  <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>หน้าแรก | My Journal Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@300;400;600&family=Sarabun:wght@300;400;500&display=swap" rel="stylesheet">
 </head>
 <body>
 
-  <header class="navbar">
-    <div class="nav-container">
-      <a href="index.html" class="logo">
-        <span class="logo-icon">🐱🪷</span>
-        <span class="logo-text">Student Portfolio</span>
-      </a>
-      <nav>
-        <ul class="nav-menu">
-          <li><a href="index.html" class="nav-link active">หน้าแรก</a></li>
-          <li><a href="profile.html" class="nav-link">ประวัติส่วนตัว</a></li>
-          <li><a href="education.html" class="nav-link">การศึกษา</a></li>
-          <li><a href="hobby.html" class="nav-link">งานอดิเรก</a></li>
-          <li><a href="contact.html" class="nav-link">ติดต่อ</a></li>
-        </ul>
-      </nav>
-    </div>
-  </header>
+    <header>
+        <nav class="navbar">
+            <div class="logo">🌿 Student Journal <span>🐾</span></div>
+            <ul class="nav-links">
+                <li><a href="index.html" class="active">หน้าแรก</a></li>
+                <li><a href="profile.html">ประวัติส่วนตัว</a></li>
+                <li><a href="education.html">การศึกษา</a></li>
+                <li><a href="hobby.html">งานอดิเรก</a></li>
+                <li><a href="contact.html">ติดต่อ</a></li>
+            </ul>
+        </nav>
+    </header>
 
-  <main>
-    <section class="container hero-section">
-      <div class="hero-content">
-        <span class="badge">🍃 ยินดีต้อนรับสู่พื้นที่ของฉัน</span>
-        <h1 class="hero-title">สวัสดีครับ/ค่ะ! <br>ฉันชื่อ [กรอกชื่อ]</h1>
-        <p class="hero-subtitle">นักเรียนชั้นมัธยมศึกษาปีที่ 3/1 | สายกิจกรรม & เทคโนโลยี</p>
-        <p class="hero-desc">
-          ยินดีต้อนรับเข้าสู่เว็บไซต์ Portfolio รวบรวมผลงาน ประวัติส่วนตัว และความสนใจของฉัน
-          สร้างขึ้นด้วยความตั้งใจในวิชาคอมพิวเตอร์ ตกแต่งด้วยบรรยากาศธรรมชาติ ดอกบัว และน้องแมวสุดน่ารัก 🐱✨
-        </p>
-        <div class="btn-group">
-          <a href="profile.html" class="btn btn-primary">รู้จักฉันมากขึ้น 🌸</a>
-          <a href="hobby.html" class="btn btn-secondary">ดูงานอดิเรก 🎮</a>
-        </div>
-      </div>
+    <main>
+        <section class="hero-container">
+            <div class="hero-text">
+                <span class="badge">🍎 Welcome to My Space</span>
+                <h1>สวัสดีครับ/ค่ะ! ยินดีต้อนรับสู่ <span class="highlight">Portfolio</span> ของฉัน</h1>
+                <p>นักเรียนชั้นมัธยมศึกษาปีที่ 3 ที่หลงใหลในธรรมชาติ ความรักในน้องแมว 🪷 ดอกบัวอันสงบ และไอเดียสร้างสรรค์ใหม่ ๆ</p>
+                <div class="hero-buttons">
+                    <a href="profile.html" class="btn btn-primary">รู้จักฉันมากขึ้น 🪷</a>
+                    <a href="hobby.html" class="btn btn-secondary">ดูงานอดิเรก 🐾</a>
+                </div>
+            </div>
+            <div class="hero-image-wrapper">
+                <div class="floating-bg-circle"></div>
+                <div class="decorative-sticker sticker-apple">🍎</div>
+                <div class="decorative-sticker sticker-cat">🐾</div>
+                <img src="https://placehold.co/400x400/e2f0d9/2d5a27?text=My+Profile" alt="รูปโปรไฟล์ของฉัน" class="hero-profile-img">
+            </div>
+        </section>
 
-      <div class="hero-image-container">
-        <div class="hero-shape-bg"></div>
-        <img src="https://placehold.co/400x400/4e8d7c/ffffff?text=Profile+Image" alt="รูปโปรไฟล์ของฉัน" class="hero-img">
-        <span class="deco-element deco-1">🐱</span>
-        <span class="deco-element deco-2">🪷</span>
-      </div>
-    </section>
+        <section class="highlight-section">
+            <div class="section-title">
+                <h2>ความชอบสุดพิเศษ 🌸</h2>
+                <p>สิ่งที่สร้างแรงบันดาลใจให้ฉันในทุกๆ วัน</p>
+            </div>
+            <div class="grid-3">
+                <div class="card journal-card">
+                    <div class="card-icon">🍎</div>
+                    <h3>ความสดใส & แอปเปิ้ล</h3>
+                    <p>สัญลักษณ์ของความสดชื่น พลังบวก และไอเดียที่ผุดขึ้นมาใหม่เสมอ</p>
+                </div>
+                <div class="card journal-card">
+                    <div class="card-icon">🪷</div>
+                    <h3>ดอกบัว & ธรรมชาติ</h3>
+                    <p>ความสงบ สบายตา และความงดงามที่เรียบง่ายของใบไม้สีเขียว</p>
+                </div>
+                <div class="card journal-card">
+                    <div class="card-icon">🐾</div>
+                    <h3>ทาสแมวตัวยง</h3>
+                    <p>ความน่ารักและผ่อนคลายที่ได้จากน้องแมวในวันเรียนหนักๆ</p>
+                </div>
+            </div>
+        </section>
+    </main>
 
-    <section class="container">
-      <div class="title-container">
-        <h2 class="section-title">ไฮไลต์ประจำตัว</h2>
-        <p class="section-subtitle">สรุปข้อมูลสั้น ๆ ที่ทำให้คุณรู้จักฉันดีขึ้น</p>
-      </div>
-
-      <div class="highlights-grid">
-        <div class="highlight-card">
-          <div class="highlight-icon">🏫</div>
-          <div class="highlight-number">ม.3/[กรอกห้อง]</div>
-          <p>ระดับชั้นปัจจุบัน</p>
+    <footer>
+        <div class="footer-container">
+            <div class="footer-info">
+                <h3>🌿 Student Portfolio</h3>
+                <p>สร้างสรรค์โดย [กรอกชื่อ] ชั้น ม.3/[กรอกห้อง]</p>
+                <p>โรงเรียน [กรอกชื่อโรงเรียน]</p>
+            </div>
+            <div class="footer-links">
+                <h4>เมนูลัด</h4>
+                <ul>
+                    <li><a href="index.html">หน้าแรก</a></li>
+                    <li><a href="profile.html">ประวัติส่วนตัว</a></li>
+                    <li><a href="education.html">การศึกษา</a></li>
+                    <li><a href="hobby.html">งานอดิเรก</a></li>
+                    <li><a href="contact.html">ติดต่อ</a></li>
+                </ul>
+            </div>
         </div>
-        <div class="highlight-card">
-          <div class="highlight-icon">💻</div>
-          <div class="highlight-number">[กรอกวิชาที่ชอบ]</div>
-          <p>วิชาที่ชื่นชอบที่สุด</p>
+        <div class="copyright">
+            <p>&copy; 2026 Student Journal Portfolio. All Rights Reserved.</p>
         </div>
-        <div class="highlight-card">
-          <div class="highlight-icon">🎨</div>
-          <div class="highlight-number">3+</div>
-          <p>งานอดิเรกที่หลงใหล</p>
-        </div>
-      </div>
-    </section>
-  </main>
-
-  <footer class="footer">
-    <div class="footer-container">
-      <div>
-        <div class="footer-brand">🐱 Student Portfolio</div>
-        <p class="footer-desc">โครงงานเว็บไซต์แนะนำตัวเอง วิชาคอมพิวเตอร์ ชั้นมัธยมศึกษาปีที่ 3 ออกแบบด้วยสไตล์ Modern Natural & Cute</p>
-      </div>
-      <div>
-        <h3 class="footer-links-title">เมนูด่วน</h3>
-        <div class="footer-nav">
-          <a href="index.html">หน้าแรก</a>
-          <a href="profile.html">ประวัติส่วนตัว</a>
-          <a href="education.html">การศึกษา</a>
-          <a href="hobby.html">งานอดิเรก</a>
-          <a href="contact.html">ติดต่อ</a>
-        </div>
-      </div>
-    </div>
-    <div class="footer-bottom">
-      <p>&copy; 2026 [กรอกชื่อ] | ชั้นมัธยมศึกษาปีที่ 3/[กรอกห้อง] โรงเรียน[กรอกชื่อโรงเรียน]</p>
-    </div>
-  </footer>
+    </footer>
 
 </body>
 </html>
