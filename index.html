@@ -1,234 +1,361 @@
 <!DOCTYPE html>
 <html lang="th">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="description" content="Digital Scrapbook Journal Portfolio ของนักเรียน ม.3">
-<title>My Little Journal ♡</title>
-<link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="My Digital Scrapbook Journal">
+    <title>My Little Journal ♡</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Itim&family=Kalam:wght@400;700&family=Mitr:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
 </head>
 
-<body>
+<body class="home-page">
 
-<header class="nav-wrap">
-<nav class="nav" aria-label="เมนูหลัก">
+    <div class="paper-noise"></div>
 
-<a class="tab active" href="index.html">HOME ✦</a>
-<a class="tab" href="profile.html">ABOUT ♡</a>
-<a class="tab" href="education.html">STUDY ✎</a>
-<a class="tab" href="hobby.html">HOBBY ★</a>
-<a class="tab" href="contact.html">CONTACT 💌</a>
+    <!-- FLOATING DECORATIONS -->
+    <div class="floating-doodle doodle-star star-1">✦</div>
+    <div class="floating-doodle doodle-star star-2">★</div>
+    <div class="floating-doodle doodle-heart heart-1">♡</div>
+    <div class="floating-doodle doodle-clover clover-1">☘</div>
+    <div class="floating-doodle doodle-flower flower-1">✿</div>
+    <div class="floating-doodle doodle-note note-1">♪</div>
 
-</nav>
-</header>
+    <!-- NAVIGATION -->
+    <header class="site-header">
+        <nav class="journal-nav">
 
-<main>
+            <a href="index.html" class="nav-tab active">
+                HOME
+            </a>
 
-<section class="hero">
+            <a href="profile.html" class="nav-tab">
+                ABOUT
+            </a>
 
-<span class="doodle" style="left:8%;top:20%">✦</span>
-<span class="doodle" style="right:9%;top:30%;animation-delay:1s">♡</span>
-<span class="doodle" style="left:18%;bottom:13%;animation-delay:2s">☁</span>
+            <a href="education.html" class="nav-tab">
+                STUDY
+            </a>
 
-<div class="hero-inner">
+            <a href="hobby.html" class="nav-tab">
+                HOBBY
+            </a>
 
-<div class="hero-copy pop">
+            <a href="contact.html" class="nav-tab">
+                CONTACT
+            </a>
 
-<div class="sticker"
-style="background:#fff7a8;margin-bottom:18px">
-student journal
-</div>
+        </nav>
+    </header>
 
-<h1>
-HELLO!
-<span>♡</span>
-</h1>
+    <main>
 
-<div class="hero-name">
-[ชื่อ-นามสกุล]
-</div>
+        <!-- HERO -->
+        <section class="hero-section">
 
-<p class="hero-desc">
-ยินดีต้อนรับสู่โลกเล็ก ๆ ของฉัน —
-พื้นที่ที่รวมเรื่องราว โรงเรียน งานอดิเรก
-ความฝัน และความทรงจำของนักเรียน ม.3
-เอาไว้ในสมุดเล่มเดียว
-</p>
+            <div class="hero-paper paper-layer">
 
-<div class="hero-actions">
+                <span class="paper-tape tape-top"></span>
 
-<a class="btn" href="profile.html">
-รู้จักฉันมากขึ้น →
-</a>
+                <div class="hero-small-note">
+                    welcome ♡
+                </div>
 
-<a class="btn alt" href="hobby.html">
-ดูสิ่งที่ฉันชอบ ♡
-</a>
+                <div class="hero-content">
 
-</div>
+                    <div class="hero-title-wrap">
 
-<span class="hero-note">
-welcome to my little world!
-</span>
+                        <span class="tiny-label">
+                            MY LITTLE WORLD
+                        </span>
 
-</div>
+                        <h1>
+                            HELLO!
+                        </h1>
 
-<div class="hero-photo pop">
+                        <h2>
+                            THIS IS MY<br>
+                            <span>JOURNAL ♡</span>
+                        </h2>
 
-<div class="polaroid">
+                        <p class="hero-description">
+                            สวัสดี! นี่คือพื้นที่เล็ก ๆ
+                            ที่รวบรวมเรื่องราว ตัวตน
+                            ความชอบ และความทรงจำของฉัน
+                        </p>
 
-<img
-src="https://placehold.co/700x850/FFF7F0/795548?text=YOUR+PHOTO"
-alt="รูปโปรไฟล์ของเจ้าของเว็บไซต์">
+                        <div class="hero-buttons">
 
-<div class="caption">
-that's me! ♡
-</div>
+                            <a href="profile.html" class="sticker-button pink-button">
+                                รู้จักฉันมากขึ้น →
+                            </a>
 
-</div>
+                            <a href="hobby.html" class="sticker-button yellow-button">
+                                สิ่งที่ฉันชอบ ♡
+                            </a>
 
-<div
-class="tape"
-style="top:8px;left:8px;transform:rotate(-8deg)">
-</div>
+                        </div>
 
-<div class="badge">
-made<br>
-with<br>
-dreams ✦
-</div>
+                    </div>
 
-</div>
+                    <!-- PHOTO -->
+                    <div class="hero-photo-area">
 
-</div>
+                        <div class="photo-tape"></div>
 
-</section>
+                        <div class="polaroid hero-polaroid">
 
+                            <div class="photo-placeholder">
+                                <span>YOUR<br>PHOTO</span>
+                            </div>
 
-<section class="section reveal">
+                            <div class="polaroid-caption">
+                                that's me! ♡
+                            </div>
 
-<div class="section-head">
+                        </div>
 
-<div>
+                        <div class="photo-sticker sticker-cat">
+                            🐱
+                        </div>
 
-<div class="section-kicker">
-a little preview...
-</div>
+                        <div class="photo-sticker sticker-apple">
+                            🍎
+                        </div>
 
-<h2 class="section-title">
-MY LITTLE WORLD
-</h2>
+                        <div class="mini-note">
+                            <span>✎</span>
+                            just being me
+                        </div>
 
-</div>
+                    </div>
 
-<span
-class="sticker"
-style="background:#dff2df">
-♡ keep scrolling ♡
-</span>
+                </div>
 
-</div>
+                <!-- DECORATIVE COLLAGE -->
+                <div class="hero-collage">
 
+                    <div class="tiny-paper rotate-left">
+                        <span>made with</span>
+                        <strong>dreams</strong>
+                    </div>
 
-<div class="about-grid">
+                    <div class="clover-sticker">
+                        <span>☘</span>
+                    </div>
 
-<div class="note-stack">
+                    <div class="starburst">
+                        <span>MY<br>WORLD!</span>
+                    </div>
 
-<div class="note one">
+                    <div class="fruit-sticker">
+                        🍓
+                    </div>
 
-“ทุกหน้าของสมุดนี้มีเรื่องเล็ก ๆ
-ที่เป็นตัวฉันอยู่เสมอ ✎”
+                </div>
 
-</div>
+            </div>
 
-<div class="note two">
+        </section>
 
-School • Friends • Music • Games • Dreams
 
-<br><br>
+        <!-- INTRO -->
+        <section class="intro-section scrapbook-section">
 
-ทั้งหมดรวมอยู่ที่นี่!
+            <div class="section-heading">
+                <span class="heading-sticker">PAGE 01</span>
 
-</div>
+                <h2>
+                    A LITTLE PIECE
+                    <br>
+                    OF MY WORLD ♡
+                </h2>
 
-</div>
+                <p>
+                    welcome to my tiny corner of the internet
+                </p>
+            </div>
 
 
-<div class="info-cloud">
+            <div class="intro-collage">
 
-<div class="info">
+                <div class="intro-paper paper-yellow rotate-left">
 
-<b>♡ WHO AM I?</b>
+                    <span class="paper-label">
+                        NOTE
+                    </span>
 
-นักเรียนชั้น ม.3
-ที่กำลังเก็บเกี่ยวประสบการณ์
-และความทรงจำดี ๆ
+                    <h3>
+                        ABOUT ME
+                    </h3>
 
-</div>
+                    <p>
+                        ฉันเป็นนักเรียน ม.3
+                        ที่ชอบเรียนรู้สิ่งใหม่ ๆ
+                        และสนุกกับการสร้างสรรค์สิ่งต่าง ๆ
+                    </p>
 
+                    <span class="handwriting">
+                        little things matter ♡
+                    </span>
 
-<div class="info">
+                </div>
 
-<b>✎ MY SCHOOL</b>
 
-[กรอกชื่อโรงเรียน]
+                <div class="mini-polaroid rotate-right">
 
-</div>
+                    <div class="mini-photo">
+                        YOUR<br>
+                        PHOTO
+                    </div>
 
+                    <span>
+                        a little memory
+                    </span>
 
-<div class="info">
+                </div>
 
-<b>★ I LIKE</b>
 
-[กรอกงานอดิเรก / สิ่งที่ชอบ]
+                <div class="green-note">
 
-</div>
+                    <div class="clip"></div>
 
+                    <span>
+                        currently...
+                    </span>
 
-<div class="info">
+                    <strong>
+                        dreaming ✦
+                    </strong>
 
-<b>☁ MY DREAM</b>
+                    <small>
+                        about the future
+                    </small>
 
-[กรอกความฝันหรือเป้าหมาย]
+                </div>
 
-</div>
 
-</div>
+                <div class="clover-large">
+                    ☘
+                </div>
 
-</div>
+            </div>
 
-</section>
+        </section>
 
-</main>
 
+        <!-- QUICK JOURNAL -->
+        <section class="quick-section">
 
-<footer>
+            <div class="torn-paper">
 
-<h2 class="footer-title">
-Thanks for visiting my little world ♡
-</h2>
+                <span class="torn-label">
+                    LITTLE THINGS
+                </span>
 
-<div class="footer-note">
-see you on the next page!
-</div>
+                <h2>
+                    things that make me smile
+                </h2>
 
-<div class="footer-nav">
+                <div class="little-things">
 
-<a href="profile.html">ABOUT</a>
-·
-<a href="education.html">STUDY</a>
-·
-<a href="hobby.html">HOBBY</a>
-·
-<a href="contact.html">CONTACT</a>
+                    <div class="little-item">
+                        <span>🍓</span>
+                        <p>ของน่ารัก ๆ</p>
+                    </div>
 
-</div>
+                    <div class="little-item">
+                        <span>🎵</span>
+                        <p>เพลงโปรด</p>
+                    </div>
 
-<p>
-© 2026 [ชื่อ-นามสกุล] · M.3 Student Journal
-</p>
+                    <div class="little-item">
+                        <span>📷</span>
+                        <p>รูปถ่าย</p>
+                    </div>
 
-</footer>
+                    <div class="little-item">
+                        <span>☘</span>
+                        <p>ธรรมชาติ</p>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- FOOTER -->
+        <footer class="journal-footer">
+
+            <div class="footer-tape"></div>
+
+            <div class="footer-content">
+
+                <span class="footer-star">★</span>
+
+                <p class="footer-main">
+                    Thanks for visiting
+                    <br>
+                    <span>my little world ♡</span>
+                </p>
+
+                <p class="footer-small">
+                    made with dreams, doodles & a little bit of chaos
+                </p>
+
+                <div class="footer-stickers">
+                    <span>🍎</span>
+                    <span>☘</span>
+                    <span>✦</span>
+                    <span>♡</span>
+                </div>
+
+            </div>
+
+        </footer>
+
+    </main>
+
+
+    <!-- CLICK POP EFFECT -->
+    <script>
+        document.addEventListener("click", function(event) {
+
+            const target = event.target;
+
+            if (
+                target.closest("a") ||
+                target.closest("button") ||
+                target.closest("nav")
+            ) {
+                return;
+            }
+
+            const emojis = ["✦", "♡", "☘", "★", "🍎", "🌼", "✨"];
+
+            const pop = document.createElement("span");
+
+            pop.className = "click-pop";
+            pop.textContent =
+                emojis[Math.floor(Math.random() * emojis.length)];
+
+            pop.style.left = event.clientX + "px";
+            pop.style.top = event.clientY + "px";
+
+            document.body.appendChild(pop);
+
+            setTimeout(() => {
+                pop.remove();
+            }, 900);
+
+        });
+    </script>
 
 </body>
 </html>
