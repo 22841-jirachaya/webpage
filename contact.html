@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <title>💌 Contact | My Little Journal</title>
+    <meta name="description" content="Contact - My Little Digital Journal">
+    <title>💌 Contact — My Little Digital Journal</title>
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -13,225 +13,236 @@
     <link rel="stylesheet" href="style.css">
 </head>
 
-<body>
+<body data-page="contact">
 
-    <div class="floating-decor decor-1">💌</div>
-    <div class="floating-decor decor-2">💖</div>
-    <div class="floating-decor decor-3">🌼</div>
-    <div class="floating-decor decor-4">🍀</div>
+<div class="background-decoration" aria-hidden="true">
+    <span class="float-deco deco-apple">🍎</span>
+    <span class="float-deco deco-flower">🌸</span>
+    <span class="float-deco deco-leaf">🌿</span>
+    <span class="float-deco deco-sparkle">✨</span>
+    <span class="float-deco deco-heart">♡</span>
+    <span class="float-deco deco-star">⭐</span>
+</div>
 
-    <header class="site-header">
-        <nav class="navbar paper-shadow">
+<div id="appleCursor" class="apple-cursor" aria-hidden="true">
+    <span class="cursor-leaf">◜</span>
+</div>
 
-            <a href="index.html" class="brand">
-                <span class="brand-icon">🍀</span>
-                <span>MY LITTLE JOURNAL</span>
-            </a>
+<div id="particleLayer" class="particle-layer" aria-hidden="true"></div>
 
-            <div class="nav-links">
-                <a href="index.html" class="nav-link">🏠 หน้าแรก</a>
-                <a href="profile.html" class="nav-link">🧸 ประวัติส่วนตัว</a>
-                <a href="education.html" class="nav-link">🎓 การศึกษา</a>
-                <a href="hobby.html" class="nav-link">🎨 งานอดิเรก</a>
-                <a href="contact.html" class="nav-link active">💌 ติดต่อ</a>
-            </div>
+<main class="page-shell">
 
-        </nav>
-    </header>
+<header class="site-header paper">
+    <div class="tape tape-top-left"></div>
+    <div class="paperclip">📎</div>
 
+    <a href="index.html" class="brand">
+        <span class="brand-icon">🍎</span>
+        <span>
+            <strong>MY LITTLE</strong>
+            <small>DIGITAL JOURNAL</small>
+        </span>
+    </a>
 
-    <main class="page-main">
+    <button class="menu-toggle" id="menuToggle"
+            aria-label="เปิดเมนู"
+            aria-expanded="false">☰</button>
 
-        <section class="page-cover contact-cover reveal">
+    <nav class="main-nav" id="mainNav">
+        <a href="index.html" data-nav="home">หน้าแรก</a>
+        <a href="profile.html" data-nav="profile">ประวัติส่วนตัว</a>
+        <a href="education.html" data-nav="education">การศึกษา</a>
+        <a href="hobby.html" data-nav="hobby">งานอดิเรก</a>
+        <a href="contact.html" data-nav="contact">ติดต่อ</a>
+    </nav>
 
-            <div class="page-cover-sticker">
-                💌 DEAR FRIEND
-            </div>
+    <span class="nav-sticker">write to me 💌</span>
+</header>
 
-            <h1>Let's Keep In Touch! 🌷</h1>
+<section class="page-title paper reveal slide-up">
+    <span class="page-icon">💌</span>
 
-            <p>
-                ถ้าอยากพูดคุยหรือส่งข้อความถึงฉัน
-                สามารถติดต่อได้ทางช่องทางด้านล่าง 💖
-            </p>
+    <div>
+        <span class="eyebrow">page 05 — pen pal</span>
+        <h1>ส่งข้อความถึงฉัน</h1>
+        <p>เหมือนส่งจดหมายเล็ก ๆ ถึงเพื่อนคนหนึ่ง ♡</p>
+    </div>
 
-            <div class="cover-doodles">
-                💌 ✨ 💖 🍀 🌼
-            </div>
+    <span class="page-doodle">♡ ✉ ✦</span>
+</section>
 
-        </section>
+<section class="contact-layout section-space">
 
+    <!-- =========================
+         ENVELOPE
+    ========================== -->
+    <div class="envelope-area reveal slide-left">
 
-        <section class="letter-section section-space reveal">
+        <div class="envelope" id="envelope">
 
-            <div class="letter-paper">
+            <div class="envelope-back"></div>
 
-                <div class="envelope-decoration">
-                    💌
-                </div>
+            <div class="envelope-letter">
+                <span class="letter-sparkle">✦</span>
 
-                <div class="stamp">
-                    🍀
-                    <small>MAIL</small>
-                </div>
+                <span class="mini-label">A LITTLE LETTER</span>
 
-                <div class="letter-header">
-                    <span>Dear Friend,</span>
-                    <span>📅 [DATE]</span>
-                </div>
+                <h2>ถึงคนที่แวะเข้ามาอ่าน ♡</h2>
 
-                <div class="letter-content">
-
-                    <p>
-                        สวัสดี! 👋
-                    </p>
-
-                    <p>
-                        ขอบคุณที่เข้ามาเยี่ยมชม
-                        My Little Journal ของฉันนะ
-                        หากต้องการติดต่อหรือพูดคุย
-                        สามารถเลือกช่องทางด้านล่างได้เลย 💖
-                    </p>
-
-                    <div class="contact-list">
-
-                        <a href="mailto:example@email.com" class="contact-item">
-                            <span>📧</span>
-                            <div>
-                                <strong>Email</strong>
-                                <small>example@email.com</small>
-                            </div>
-                            <b>↗</b>
-                        </a>
-
-                        <a href="#" class="contact-item">
-                            <span>🌐</span>
-                            <div>
-                                <strong>Website</strong>
-                                <small>My Portfolio</small>
-                            </div>
-                            <b>↗</b>
-                        </a>
-
-                        <a href="#" class="contact-item">
-                            <span>💬</span>
-                            <div>
-                                <strong>Social</strong>
-                                <small>[ใส่ Social Media]</small>
-                            </div>
-                            <b>↗</b>
-                        </a>
-
-                    </div>
-
-                    <div class="letter-sign">
-                        With love,<br>
-                        <strong>[ชื่อของฉัน]</strong> 🍀
-                    </div>
-
-                </div>
-
-                <div class="letter-decoration flower-one">🌼</div>
-                <div class="letter-decoration flower-two">🌷</div>
-                <div class="letter-decoration heart-one">♡</div>
-
-            </div>
-
-        </section>
-
-
-        <!-- Contact Cards -->
-        <section class="section-space reveal">
-
-            <div class="section-heading">
-                <span class="heading-sticker">📬 CONTACT NOTES</span>
-                <h2>Find Me Here</h2>
-            </div>
-
-            <div class="contact-notes">
-
-                <div class="contact-note pink-contact rotate-left">
-                    <span>📧</span>
-                    <h3>Email</h3>
-                    <p>example@email.com</p>
-                    <div>✉️ send me a message</div>
-                </div>
-
-                <div class="contact-note yellow-contact rotate-right">
-                    <span>🌐</span>
-                    <h3>Website</h3>
-                    <p>My Portfolio</p>
-                    <div>↗ visit my page</div>
-                </div>
-
-                <div class="contact-note blue-contact rotate-small">
-                    <span>💬</span>
-                    <h3>Social</h3>
-                    <p>[Social Media]</p>
-                    <div>💖 say hello</div>
-                </div>
-
-            </div>
-
-        </section>
-
-
-        <section class="final-note reveal">
-
-            <div class="final-paper">
-
-                <div class="final-tape"></div>
-
-                <span class="big-heart">💖</span>
-
-                <h2>Thank You!</h2>
-
+                <!-- ✏️ แก้ข้อความ Contact Message ตรงนี้ -->
                 <p>
-                    ขอบคุณที่เปิด Journal ของฉันจนถึงหน้าสุดท้ายนะ 🌷
+                    ขอบคุณที่แวะเข้ามาเยี่ยมชม
+                    Digital Journal เล็ก ๆ ของฉัน
+                    หวังว่าคุณจะสนุกกับการเปิดดู
+                    เรื่องราวในแต่ละหน้านะ!
                 </p>
 
-                <div class="final-doodles">
-                    🍀 ✨ 🌼 🎀 🍓
-                </div>
-
-                <a href="index.html" class="journal-button button-green">
-                    🏠 กลับหน้าแรก
-                    <b>↗</b>
-                </a>
-
+                <span class="handwritten">
+                    from YOUR NAME 🍎
+                </span>
             </div>
 
-        </section>
+            <div class="envelope-flap"></div>
 
-    </main>
-
-
-    <footer class="site-footer">
-        <div class="footer-paper">
-
-            <div class="footer-main">
-
-                <div>
-                    <h3>💌 CONTACT JOURNAL</h3>
-                    <p>Write me a little hello.</p>
-                </div>
-
-                <div class="footer-links">
-                    <a href="index.html">หน้าแรก</a>
-                    <a href="profile.html">ประวัติส่วนตัว</a>
-                    <a href="education.html">การศึกษา</a>
-                    <a href="hobby.html">งานอดิเรก</a>
-                </div>
-
-            </div>
-
-            <div class="footer-bottom">
-                <span>💌 Send kindness</span>
-                <span>PAGE 05 / 05</span>
+            <div class="envelope-front">
+                <div class="stamp-large">🍎</div>
+                <span>FOR YOU ♡</span>
             </div>
 
         </div>
-    </footer>
 
+        <p class="envelope-hint">
+            💌 แตะ / วางเมาส์บนซองจดหมาย
+        </p>
+
+    </div>
+
+    <!-- =========================
+         CONTACT INFO
+    ========================== -->
+    <div class="contact-info">
+
+        <div class="contact-intro paper pink-paper reveal slide-right">
+            <span class="mini-label">LET'S CONNECT</span>
+
+            <h2>มาทักทายกันได้นะ! 🌷</h2>
+
+            <p>
+                หากต้องการติดต่อหรืออยากพูดคุย
+                สามารถเลือกช่องทางด้านล่างได้เลย
+            </p>
+        </div>
+
+        <div class="social-stack">
+
+            <a href="#" class="social-card paper reveal slide-right delay-1"
+               data-placeholder-link="true">
+                <span class="social-icon">📸</span>
+                <span>
+                    <small>INSTAGRAM</small>
+
+                    <!-- ✏️ แก้ Link Social Media ตรงนี้ -->
+                    <strong>YOUR INSTAGRAM</strong>
+                </span>
+                <b>↗</b>
+            </a>
+
+            <a href="#" class="social-card paper reveal slide-right delay-2"
+               data-placeholder-link="true">
+                <span class="social-icon">💙</span>
+                <span>
+                    <small>FACEBOOK</small>
+
+                    <!-- ✏️ แก้ Link Social Media ตรงนี้ -->
+                    <strong>YOUR FACEBOOK</strong>
+                </span>
+                <b>↗</b>
+            </a>
+
+            <a href="#" class="social-card paper reveal slide-right delay-3"
+               data-placeholder-link="true">
+                <span class="social-icon">✉️</span>
+                <span>
+                    <small>EMAIL</small>
+
+                    <!-- ✏️ แก้ Email ตรงนี้ -->
+                    <strong>YOUR EMAIL</strong>
+                </span>
+                <b>↗</b>
+            </a>
+
+            <a href="#" class="social-card paper reveal slide-right delay-4"
+               data-placeholder-link="true">
+                <span class="social-icon">🌐</span>
+                <span>
+                    <small>OTHER</small>
+
+                    <!-- ✏️ แก้ช่องทางอื่น ๆ ตรงนี้ -->
+                    <strong>YOUR WEBSITE</strong>
+                </span>
+                <b>↗</b>
+            </a>
+
+        </div>
+
+    </div>
+</section>
+
+<section class="contact-note paper green-paper reveal scale-in">
+    <span class="contact-note-icon">📮</span>
+
+    <div>
+        <span class="eyebrow">one last note</span>
+        <h2>“ขอบคุณที่เปิด Journal ของฉันจนถึงหน้าสุดท้าย”</h2>
+        <p class="handwritten">
+            see you on another page! 🍎✨
+        </p>
+    </div>
+
+    <div class="postcard-stamp">POST<br>♡<br>2026</div>
+</section>
+
+<footer class="site-footer paper">
+    <div>
+        <strong>🍎 MY LITTLE DIGITAL JOURNAL</strong>
+        <p>My little story, one page at a time. ♡</p>
+    </div>
+
+    <div class="footer-links">
+        <a href="index.html">Home</a>
+        <a href="profile.html">Profile</a>
+        <a href="education.html">Education</a>
+        <a href="hobby.html">Hobby</a>
+        <a href="contact.html">Contact</a>
+    </div>
+
+    <div class="footer-stamp">MADE WITH ♡</div>
+</footer>
+
+</main>
+
+<div class="music-player paper" id="musicPlayer">
+    <div class="music-cd" id="musicCd">💿</div>
+
+    <div class="music-info">
+        <strong>my little soundtrack 🎵</strong>
+        <span id="musicStatus">Paused</span>
+    </div>
+
+    <button id="playMusic" class="music-control" aria-label="เล่นเพลง">▶</button>
+    <button id="pauseMusic" class="music-control" aria-label="หยุดเพลง">❚❚</button>
+
+    <label class="volume-wrap">
+        🔊
+        <input type="range" id="volumeControl"
+               min="0" max="1" step="0.05" value="0.5">
+    </label>
+
+    <audio id="backgroundMusic" loop preload="metadata">
+        <source src="music/music.mp3" type="audio/mpeg">
+    </audio>
+</div>
+
+<script src="script.js"></script>
 </body>
 </html>
