@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="MY LITTLE DIGITAL JOURNAL - Student Portfolio">
-    <title>🍎 My Little Digital Journal</title>
+    <meta name="description" content="Hobbies - My Little Digital Journal">
+    <title>🎨 Hobby — My Little Digital Journal</title>
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -13,293 +13,282 @@
     <link rel="stylesheet" href="style.css">
 </head>
 
-<body data-page="home">
+<body data-page="hobby">
 
-    <!-- =========================
-         BACKGROUND DECORATIONS
-    ========================== -->
-    <div class="background-decoration" aria-hidden="true">
-        <span class="float-deco deco-apple">🍎</span>
-        <span class="float-deco deco-flower">🌸</span>
-        <span class="float-deco deco-leaf">🌿</span>
-        <span class="float-deco deco-sparkle">✨</span>
-        <span class="float-deco deco-heart">♡</span>
-        <span class="float-deco deco-star">⭐</span>
-        <span class="float-deco deco-ribbon">🎀</span>
+<div class="background-decoration" aria-hidden="true">
+    <span class="float-deco deco-apple">🍎</span>
+    <span class="float-deco deco-flower">🌸</span>
+    <span class="float-deco deco-leaf">🌿</span>
+    <span class="float-deco deco-sparkle">✨</span>
+    <span class="float-deco deco-heart">♡</span>
+    <span class="float-deco deco-star">⭐</span>
+</div>
+
+<div id="appleCursor" class="apple-cursor" aria-hidden="true">
+    <span class="cursor-leaf">◜</span>
+</div>
+
+<div id="particleLayer" class="particle-layer" aria-hidden="true"></div>
+
+<main class="page-shell">
+
+<header class="site-header paper">
+    <div class="tape tape-top-left"></div>
+    <div class="paperclip">📎</div>
+
+    <a href="index.html" class="brand">
+        <span class="brand-icon">🍎</span>
+        <span>
+            <strong>MY LITTLE</strong>
+            <small>DIGITAL JOURNAL</small>
+        </span>
+    </a>
+
+    <button class="menu-toggle" id="menuToggle"
+            aria-label="เปิดเมนู"
+            aria-expanded="false">☰</button>
+
+    <nav class="main-nav" id="mainNav">
+        <a href="index.html" data-nav="home">หน้าแรก</a>
+        <a href="profile.html" data-nav="profile">ประวัติส่วนตัว</a>
+        <a href="education.html" data-nav="education">การศึกษา</a>
+        <a href="hobby.html" data-nav="hobby">งานอดิเรก</a>
+        <a href="contact.html" data-nav="contact">ติดต่อ</a>
+    </nav>
+
+    <span class="nav-sticker">my favorites 🎨</span>
+</header>
+
+<section class="page-title paper reveal slide-up">
+    <span class="page-icon">🎨</span>
+
+    <div>
+        <span class="eyebrow">page 04 — hobby scrapbook</span>
+        <h1>งานอดิเรกของฉัน</h1>
+        <p>สิ่งเล็ก ๆ ที่ทำให้เวลาว่างของฉันมีความหมาย ✨</p>
     </div>
 
-    <!-- =========================
-         APPLE CURSOR
-    ========================== -->
-    <div id="appleCursor" class="apple-cursor" aria-hidden="true">
-        <span class="cursor-leaf">◜</span>
+    <span class="page-doodle">🎧 🎮 📷</span>
+</section>
+
+<section class="section-space">
+
+    <div class="section-heading reveal slide-up">
+        <span class="section-number">05</span>
+        <div>
+            <span class="eyebrow">things i love</span>
+            <h2>My Hobby Collage ♡</h2>
+        </div>
     </div>
 
-    <div id="particleLayer" class="particle-layer" aria-hidden="true"></div>
+    <div class="hobby-collage">
 
-    <!-- =========================
-         PAGE SHEET
-    ========================== -->
-    <main class="page-shell">
+        <article class="hobby-card large paper green-paper reveal slide-left">
+            <div class="hobby-photo emoji-photo">
+                🎧
+            </div>
 
-        <!-- =========================
-             NAVIGATION
-        ========================== -->
-        <header class="site-header paper">
-            <div class="tape tape-top-left"></div>
-            <div class="paperclip">📎</div>
+            <div class="hobby-content">
+                <span class="mini-label">01 — MUSIC</span>
+                <h3>ฟังเพลง 🎧</h3>
 
-            <a href="index.html" class="brand">
-                <span class="brand-icon">🍎</span>
-                <span>
-                    <strong>MY LITTLE</strong>
-                    <small>DIGITAL JOURNAL</small>
-                </span>
-            </a>
-
-            <button class="menu-toggle" id="menuToggle"
-                    aria-label="เปิดเมนู"
-                    aria-expanded="false">
-                ☰
-            </button>
-
-            <nav class="main-nav" id="mainNav">
-                <a href="index.html" data-nav="home">หน้าแรก</a>
-                <a href="profile.html" data-nav="profile">ประวัติส่วนตัว</a>
-                <a href="education.html" data-nav="education">การศึกษา</a>
-                <a href="hobby.html" data-nav="hobby">งานอดิเรก</a>
-                <a href="contact.html" data-nav="contact">ติดต่อ</a>
-            </nav>
-
-            <span class="nav-sticker">hello! ✨</span>
-        </header>
-
-        <!-- =========================
-             HERO
-        ========================== -->
-        <section class="hero section-space">
-
-            <div class="hero-copy paper reveal slide-left">
-
-                <div class="tape tape-top-right"></div>
-                <span class="mini-label">📖 MY JOURNAL — 2026</span>
-
-                <!-- ✏️ แก้ชื่อของคุณตรงนี้ -->
-                <h1>
-                    Hello! I'm
-                    <span class="highlight-green">YOUR NAME</span>
-                    <span class="tiny-apple">🍎</span>
-                </h1>
-
-                <!-- ✏️ แก้คำโปรยของคุณตรงนี้ -->
-                <p class="hero-tagline">
-                    นักเรียน ม.3 คนหนึ่งที่กำลังเขียนเรื่องราว
-                    ของตัวเองทีละหน้า ✨
+                <!-- ✏️ แก้ข้อมูลงานอดิเรกตรงนี้ -->
+                <p>
+                    ฉันชอบฟังเพลงในเวลาว่าง
+                    เพราะเพลงช่วยสร้างบรรยากาศ
+                    และทำให้รู้สึกผ่อนคลาย
                 </p>
 
-                <!-- ✏️ แก้ข้อความแนะนำตัวตรงนี้ -->
-                <p class="hero-description">
-                    ยินดีต้อนรับเข้าสู่สมุด Journal เล็ก ๆ ของฉัน
-                    ที่รวมเรื่องราว ความสนใจ งานอดิเรก การเรียน
-                    และสิ่งต่าง ๆ ที่ฉันภูมิใจเอาไว้ในที่เดียว
+                <span class="sticker mini-sticker">music time!</span>
+            </div>
+        </article>
+
+        <article class="hobby-card paper pink-paper reveal slide-right delay-1">
+            <div class="hobby-photo emoji-photo">
+                🎮
+            </div>
+
+            <div class="hobby-content">
+                <span class="mini-label">02 — GAME</span>
+                <h3>เล่นเกม 🎮</h3>
+
+                <!-- ✏️ แก้ข้อมูลงานอดิเรกตรงนี้ -->
+                <p>
+                    ชอบเล่นเกมเพื่อความสนุก
+                    และใช้เวลาว่างกับเพื่อน ๆ
                 </p>
+            </div>
+        </article>
 
-                <div class="badge-row">
-                    <span class="sticker badge-green">🎒 Student</span>
-                    <span class="sticker badge-pink">🌷 M.3</span>
-                    <span class="sticker badge-yellow">✨ Dreamer</span>
-                </div>
-
-                <div class="hero-buttons">
-                    <a href="profile.html" class="journal-btn primary-btn">
-                        <span>รู้จักฉันมากขึ้น</span>
-                        <b>→</b>
-                    </a>
-
-                    <a href="hobby.html" class="journal-btn secondary-btn">
-                        <span>ดูงานอดิเรกของฉัน</span>
-                        <b>→</b>
-                    </a>
-                </div>
-
-                <div class="hand-note">
-                    <span>✎ little note</span>
-                    <p>“ทุกหน้าคือเรื่องราว<br>ที่ฉันกำลังเขียนอยู่”</p>
-                </div>
-
-                <div class="doodle doodle-home">✦ ♡ ✧</div>
+        <article class="hobby-card paper yellow-paper reveal slide-up delay-2">
+            <div class="hobby-photo emoji-photo">
+                📷
             </div>
 
-            <div class="hero-visual reveal slide-right">
+            <div class="hobby-content">
+                <span class="mini-label">03 — PHOTO</span>
+                <h3>ถ่ายรูป 📷</h3>
 
-                <div class="photo-scene">
-
-                    <span class="scene-sticker sticker-one">🍎</span>
-                    <span class="scene-sticker sticker-two">🌸</span>
-                    <span class="scene-sticker sticker-three">✨</span>
-
-                    <div class="polaroid main-polaroid">
-                        <div class="photo-tape"></div>
-
-                        <!-- ✏️ ใส่รูป Profile ของคุณตรงนี้ -->
-                        <img
-                            src="images/profile.jpg"
-                            alt="รูปโปรไฟล์ของนักเรียน"
-                            class="safe-image"
-                            data-placeholder="profile"
-                        >
-
-                        <div class="polaroid-caption">
-                            <strong>that's me! ♡</strong>
-                            <span>my little corner</span>
-                        </div>
-                    </div>
-
-                    <div class="mini-note note-yellow">
-                        <span>🌱 currently</span>
-                        <strong>growing & learning</strong>
-                    </div>
-
-                    <div class="stamp">
-                        <span>★</span>
-                        <small>JOURNAL</small>
-                        <span>2026</span>
-                    </div>
-                </div>
-
+                <!-- ✏️ แก้ข้อมูลงานอดิเรกตรงนี้ -->
+                <p>
+                    ชอบเก็บภาพความทรงจำ
+                    และช่วงเวลาน่ารัก ๆ
+                    ผ่านรูปถ่าย
+                </p>
             </div>
-        </section>
+        </article>
 
-        <!-- =========================
-             QUICK JOURNAL
-        ========================== -->
-        <section class="section-space">
-            <div class="section-heading reveal slide-up">
-                <span class="section-number">01</span>
-                <div>
-                    <span class="eyebrow">a little peek</span>
-                    <h2>เปิดดูสมุดของฉันกัน ♡</h2>
-                </div>
+        <article class="hobby-card paper blue-paper reveal slide-left delay-2">
+            <div class="hobby-photo emoji-photo">
+                🎨
             </div>
 
-            <div class="journal-grid">
+            <div class="hobby-content">
+                <span class="mini-label">04 — ART</span>
+                <h3>วาดรูป 🎨</h3>
 
-                <article class="note-card paper green-paper reveal slide-up delay-1">
-                    <span class="paperclip-small">📎</span>
-                    <span class="card-icon">🌿</span>
-                    <span class="mini-label">ABOUT ME</span>
-                    <h3>เรื่องราวของฉัน</h3>
-                    <p>
-                        มาทำความรู้จักตัวฉันให้มากขึ้น
-                        ผ่านหน้าประวัติส่วนตัวเล็ก ๆ นี้
-                    </p>
-                    <a href="profile.html" class="text-link">เปิดหน้า Profile →</a>
-                </article>
-
-                <article class="note-card paper pink-paper reveal slide-up delay-2">
-                    <span class="card-icon">🎓</span>
-                    <span class="mini-label">SCHOOL LIFE</span>
-                    <h3>เส้นทางการเรียน</h3>
-                    <p>
-                        เรื่องราวการเรียนรู้ตั้งแต่วันแรก
-                        จนถึงการเดินทางในช่วง ม.3
-                    </p>
-                    <a href="education.html" class="text-link">ดูการศึกษา →</a>
-                </article>
-
-                <article class="note-card paper yellow-paper reveal slide-up delay-3">
-                    <span class="card-icon">🎨</span>
-                    <span class="mini-label">MY FAVORITES</span>
-                    <h3>สิ่งที่ฉันชอบ</h3>
-                    <p>
-                        งานอดิเรก เพลง เกม รูปภาพ
-                        และสิ่งเล็ก ๆ ที่ทำให้ฉันมีความสุข
-                    </p>
-                    <a href="hobby.html" class="text-link">ดูงานอดิเรก →</a>
-                </article>
-
+                <!-- ✏️ แก้ข้อมูลงานอดิเรกตรงนี้ -->
+                <p>
+                    ชอบวาดรูปและทดลองสร้าง
+                    งานออกแบบเล็ก ๆ
+                    ในแบบของตัวเอง
+                </p>
             </div>
-        </section>
+        </article>
 
-        <!-- =========================
-             LITTLE MESSAGE
-        ========================== -->
-        <section class="quote-section paper reveal scale-in">
-            <div class="tape tape-left"></div>
-
-            <span class="quote-mark">“</span>
-
-            <div>
-                <span class="eyebrow">today's little thought</span>
-                <h2>“ไม่ต้องสมบูรณ์แบบทุกหน้า<br>แค่เป็นเรื่องราวของเราก็พอ”</h2>
-                <p class="handwritten">— written somewhere in my journal ♡</p>
+        <article class="hobby-card paper lavender-paper reveal slide-right delay-3">
+            <div class="hobby-photo emoji-photo">
+                📚
             </div>
 
-            <span class="quote-flower">🌼</span>
-        </section>
+            <div class="hobby-content">
+                <span class="mini-label">05 — BOOK</span>
+                <h3>อ่านหนังสือ 📚</h3>
 
-        <!-- =========================
-             FOOTER
-        ========================== -->
-        <footer class="site-footer paper">
-            <div>
-                <strong>🍎 MY LITTLE DIGITAL JOURNAL</strong>
-                <p>My little story, one page at a time. ♡</p>
+                <!-- ✏️ แก้ข้อมูลงานอดิเรกตรงนี้ -->
+                <p>
+                    อ่านหนังสือหรือบทความ
+                    ที่เกี่ยวกับเรื่องที่สนใจ
+                    เพื่อหาไอเดียใหม่ ๆ
+                </p>
             </div>
+        </article>
 
-            <div class="footer-links">
-                <a href="index.html">Home</a>
-                <a href="profile.html">Profile</a>
-                <a href="education.html">Education</a>
-                <a href="hobby.html">Hobby</a>
-                <a href="contact.html">Contact</a>
-            </div>
+    </div>
+</section>
 
-            <div class="footer-stamp">MADE WITH ♡</div>
-        </footer>
+<!-- =========================
+     GALLERY
+========================== -->
+<section class="section-space">
 
-    </main>
-
-    <!-- =========================
-         MUSIC PLAYER
-    ========================== -->
-    <div class="music-player paper" id="musicPlayer">
-
-        <div class="music-cd" id="musicCd">
-            💿
+    <div class="section-heading reveal slide-up">
+        <span class="section-number">06</span>
+        <div>
+            <span class="eyebrow">little memories</span>
+            <h2>My Photo Scrapbook 📸</h2>
         </div>
+    </div>
 
-        <div class="music-info">
-            <strong>my little soundtrack 🎵</strong>
-            <span id="musicStatus">Paused</span>
-        </div>
+    <div class="gallery-board">
 
-        <button id="playMusic" class="music-control" aria-label="เล่นเพลง">
-            ▶
-        </button>
-
-        <button id="pauseMusic" class="music-control" aria-label="หยุดเพลง">
-            ❚❚
-        </button>
-
-        <label class="volume-wrap" aria-label="ระดับเสียง">
-            🔊
-            <input
-                type="range"
-                id="volumeControl"
-                min="0"
-                max="1"
-                step="0.05"
-                value="0.5"
+        <article class="gallery-polaroid polaroid-angle-left reveal scale-in">
+            <!-- ✏️ แก้ Gallery ตรงนี้ -->
+            <img
+                src="images/gallery-1.jpg"
+                alt="ภาพในแกลเลอรีหมายเลขหนึ่ง"
+                class="safe-image"
+                data-placeholder="gallery"
             >
-        </label>
+            <div class="gallery-caption">
+                <strong>little memory ♡</strong>
+                <span>📍 somewhere nice</span>
+            </div>
+        </article>
 
-        <!-- ✏️ ใส่เพลงของคุณที่ music/music.mp3 -->
-        <audio id="backgroundMusic" loop preload="metadata">
-            <source src="music/music.mp3" type="audio/mpeg">
-        </audio>
+        <article class="gallery-polaroid polaroid-angle-right reveal scale-in delay-1">
+            <!-- ✏️ แก้ Gallery ตรงนี้ -->
+            <img
+                src="images/gallery-2.jpg"
+                alt="ภาพในแกลเลอรีหมายเลขสอง"
+                class="safe-image"
+                data-placeholder="gallery"
+            >
+            <div class="gallery-caption">
+                <strong>good day ✨</strong>
+                <span>☀️ happy moment</span>
+            </div>
+        </article>
+
+        <div class="gallery-note paper yellow-paper reveal slide-up">
+            <span>📌 memory note</span>
+            <p>
+                “บางรูปไม่ได้มีไว้แค่ดู<br>
+                แต่มีไว้เพื่อจำความรู้สึก<br>
+                ในตอนนั้นด้วย”
+            </p>
+            <span class="handwritten">keep the memories ♡</span>
+        </div>
+
+    </div>
+</section>
+
+<section class="music-note paper reveal scale-in">
+    <span class="note-icon">🎵</span>
+    <div>
+        <span class="eyebrow">currently enjoying</span>
+        <h2>เพลงโปรด / Playlist ของฉัน</h2>
+
+        <!-- ✏️ แก้ข้อมูลเพลงตรงนี้ -->
+        <p>
+            ใส่ชื่อเพลง ศิลปิน หรือ Playlist
+            ที่กำลังชอบในช่วงนี้ได้ตรงนี้
+        </p>
+    </div>
+    <span class="music-note-sticker">♪ ♫ ♪</span>
+</section>
+
+<footer class="site-footer paper">
+    <div>
+        <strong>🍎 MY LITTLE DIGITAL JOURNAL</strong>
+        <p>My little story, one page at a time. ♡</p>
     </div>
 
-    <script src="script.js"></script>
+    <div class="footer-links">
+        <a href="index.html">Home</a>
+        <a href="profile.html">Profile</a>
+        <a href="education.html">Education</a>
+        <a href="hobby.html">Hobby</a>
+        <a href="contact.html">Contact</a>
+    </div>
+
+    <div class="footer-stamp">MADE WITH ♡</div>
+</footer>
+
+</main>
+
+<div class="music-player paper" id="musicPlayer">
+    <div class="music-cd" id="musicCd">💿</div>
+
+    <div class="music-info">
+        <strong>my little soundtrack 🎵</strong>
+        <span id="musicStatus">Paused</span>
+    </div>
+
+    <button id="playMusic" class="music-control" aria-label="เล่นเพลง">▶</button>
+    <button id="pauseMusic" class="music-control" aria-label="หยุดเพลง">❚❚</button>
+
+    <label class="volume-wrap">
+        🔊
+        <input type="range" id="volumeControl"
+               min="0" max="1" step="0.05" value="0.5">
+    </label>
+
+    <audio id="backgroundMusic" loop preload="metadata">
+        <source src="music/music.mp3" type="audio/mpeg">
+    </audio>
+</div>
+
+<script src="script.js"></script>
 </body>
 </html>
