@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <title>🎓 Education | My Little Journal</title>
+    <meta name="description" content="My Profile - My Little Digital Journal">
+    <title>👤 Profile — My Little Digital Journal</title>
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -13,271 +13,253 @@
     <link rel="stylesheet" href="style.css">
 </head>
 
-<body>
+<body data-page="profile">
 
-    <div class="floating-decor decor-1">📚</div>
-    <div class="floating-decor decor-2">⭐</div>
-    <div class="floating-decor decor-3">✏️</div>
-    <div class="floating-decor decor-4">🍀</div>
+<div class="background-decoration" aria-hidden="true">
+    <span class="float-deco deco-apple">🍎</span>
+    <span class="float-deco deco-flower">🌸</span>
+    <span class="float-deco deco-leaf">🌿</span>
+    <span class="float-deco deco-sparkle">✨</span>
+    <span class="float-deco deco-heart">♡</span>
+    <span class="float-deco deco-star">⭐</span>
+</div>
 
-    <header class="site-header">
-        <nav class="navbar paper-shadow">
+<div id="appleCursor" class="apple-cursor" aria-hidden="true">
+    <span class="cursor-leaf">◜</span>
+</div>
 
-            <a href="index.html" class="brand">
-                <span class="brand-icon">🍀</span>
-                <span>MY LITTLE JOURNAL</span>
-            </a>
+<div id="particleLayer" class="particle-layer" aria-hidden="true"></div>
 
-            <div class="nav-links">
-                <a href="index.html" class="nav-link">🏠 หน้าแรก</a>
-                <a href="profile.html" class="nav-link">🧸 ประวัติส่วนตัว</a>
-                <a href="education.html" class="nav-link active">🎓 การศึกษา</a>
-                <a href="hobby.html" class="nav-link">🎨 งานอดิเรก</a>
-                <a href="contact.html" class="nav-link">💌 ติดต่อ</a>
+<main class="page-shell">
+
+<header class="site-header paper">
+    <div class="tape tape-top-left"></div>
+    <div class="paperclip">📎</div>
+
+    <a href="index.html" class="brand">
+        <span class="brand-icon">🍎</span>
+        <span>
+            <strong>MY LITTLE</strong>
+            <small>DIGITAL JOURNAL</small>
+        </span>
+    </a>
+
+    <button class="menu-toggle" id="menuToggle"
+            aria-label="เปิดเมนู"
+            aria-expanded="false">☰</button>
+
+    <nav class="main-nav" id="mainNav">
+        <a href="index.html" data-nav="home">หน้าแรก</a>
+        <a href="profile.html" data-nav="profile">ประวัติส่วนตัว</a>
+        <a href="education.html" data-nav="education">การศึกษา</a>
+        <a href="hobby.html" data-nav="hobby">งานอดิเรก</a>
+        <a href="contact.html" data-nav="contact">ติดต่อ</a>
+    </nav>
+
+    <span class="nav-sticker">about me 🌷</span>
+</header>
+
+<section class="page-title paper reveal slide-up">
+    <span class="page-icon">👤</span>
+    <div>
+        <span class="eyebrow">page 02 — personal journal</span>
+        <h1>ประวัติส่วนตัวของฉัน</h1>
+        <p>เรื่องเล็ก ๆ ที่รวมกันกลายเป็นตัวฉันในวันนี้ ♡</p>
+    </div>
+    <span class="page-doodle">✦♡✦</span>
+</section>
+
+<section class="profile-layout section-space">
+
+    <div class="profile-photo-area reveal slide-left">
+
+        <div class="polaroid profile-polaroid">
+            <div class="photo-tape"></div>
+
+            <!-- ✏️ ใส่รูป Profile ของคุณตรงนี้ -->
+            <img
+                src="images/profile.jpg"
+                alt="รูปโปรไฟล์"
+                class="safe-image"
+                data-placeholder="profile"
+            >
+
+            <div class="polaroid-caption">
+                <!-- ✏️ แก้ชื่อของคุณตรงนี้ -->
+                <strong>YOUR NAME ♡</strong>
+                <span>this is me!</span>
             </div>
+        </div>
 
-        </nav>
-    </header>
+        <div class="mini-note note-pink profile-note">
+            <span>📌 fun fact</span>
+            <p>ฉันชอบเก็บเรื่องราวเล็ก ๆ<br>ไว้ในความทรงจำ</p>
+        </div>
 
+        <div class="profile-stamp">HELLO<br>♡<br>ME</div>
+    </div>
 
-    <main class="page-main">
+    <div class="profile-information">
 
-        <section class="page-cover education-cover reveal">
+        <article class="info-note paper green-paper reveal slide-right delay-1">
+            <div class="note-pin">📎</div>
 
-            <div class="page-cover-sticker">
-                🎓 SCHOOL JOURNAL
-            </div>
+            <span class="mini-label">WHO AM I?</span>
 
-            <h1>My Education 📚</h1>
+            <!-- ✏️ แก้ชื่อของคุณตรงนี้ -->
+            <h2>สวัสดี! ฉันชื่อ YOUR NAME 🍎</h2>
 
+            <!-- ✏️ แก้ข้อความแนะนำตัวตรงนี้ -->
             <p>
-                บันทึกเส้นทางการเรียนรู้ของฉัน
-                ตั้งแต่วันแรกจนถึงวันนี้ 🌱
+                ฉันเป็นนักเรียนชั้นมัธยมศึกษาปีที่ 3
+                ที่ชอบเรียนรู้สิ่งใหม่ ๆ และสนใจในสิ่งต่าง ๆ
+                รอบตัว เว็บไซต์นี้เป็นเหมือนสมุดเล่มเล็ก ๆ
+                ที่รวบรวมเรื่องราวเกี่ยวกับฉันเอาไว้
             </p>
+        </article>
 
-            <div class="cover-doodles">
-                ✏️ ⭐ 📚 🍀 🎒
-            </div>
+        <div class="info-grid">
 
-        </section>
+            <article class="small-info paper reveal slide-up delay-1">
+                <span>🏷️</span>
+                <small>ชื่อเล่น</small>
 
+                <!-- ✏️ แก้ชื่อเล่นตรงนี้ -->
+                <strong>YOUR NICKNAME</strong>
+            </article>
 
-        <section class="education-section section-space reveal">
+            <article class="small-info paper reveal slide-up delay-2">
+                <span>🎒</span>
+                <small>ระดับชั้น</small>
 
-            <div class="school-paper">
+                <!-- ✏️ แก้ระดับชั้นตรงนี้ -->
+                <strong>ม.3</strong>
+            </article>
 
-                <div class="school-header">
+            <article class="small-info paper reveal slide-up delay-3">
+                <span>🏫</span>
+                <small>โรงเรียน</small>
 
-                    <div>
-                        <span class="label-sticker">📚 MY SCHOOL JOURNEY</span>
-                        <h2>เส้นทางการศึกษา</h2>
-                    </div>
+                <!-- ✏️ แก้ข้อมูลโรงเรียนตรงนี้ -->
+                <strong>YOUR SCHOOL</strong>
+            </article>
 
-                    <div class="school-stamp">
-                        🎓
-                        <small>STUDENT</small>
-                    </div>
+            <article class="small-info paper reveal slide-up delay-4">
+                <span>🎂</span>
+                <small>วันเกิด</small>
 
-                </div>
-
-
-                <div class="timeline">
-
-                    <div class="timeline-item">
-
-                        <div class="timeline-dot">
-                            🏫
-                        </div>
-
-                        <div class="timeline-card rotate-left">
-
-                            <span class="year-tag">PRIMARY SCHOOL</span>
-
-                            <h3>🏫 ระดับประถมศึกษา</h3>
-
-                            <p>
-                                โรงเรียน:
-                                <strong>[กรอกชื่อโรงเรียน]</strong>
-                            </p>
-
-                            <p>
-                                ระดับชั้น:
-                                <strong>[กรอกข้อมูล]</strong>
-                            </p>
-
-                            <div class="tiny-sticker">
-                                🌱 little beginning
-                            </div>
-
-                        </div>
-
-                    </div>
-
-
-                    <div class="timeline-item">
-
-                        <div class="timeline-dot">
-                            🎒
-                        </div>
-
-                        <div class="timeline-card rotate-right">
-
-                            <span class="year-tag">LOWER SECONDARY</span>
-
-                            <h3>🎒 มัธยมศึกษาตอนต้น</h3>
-
-                            <p>
-                                โรงเรียน:
-                                <strong>[กรอกชื่อโรงเรียน]</strong>
-                            </p>
-
-                            <p>
-                                ระดับชั้น:
-                                <strong>ม.1 - ม.3</strong>
-                            </p>
-
-                            <div class="tiny-sticker">
-                                ⭐ growing up
-                            </div>
-
-                        </div>
-
-                    </div>
-
-
-                    <div class="timeline-item">
-
-                        <div class="timeline-dot current">
-                            🍀
-                        </div>
-
-                        <div class="timeline-card current-card rotate-small">
-
-                            <span class="year-tag">NOW</span>
-
-                            <h3>🍀 ปัจจุบัน — ม.3</h3>
-
-                            <p>
-                                ตอนนี้กำลังศึกษาอยู่ระดับ
-                                <strong>มัธยมศึกษาปีที่ 3</strong>
-                            </p>
-
-                            <p>
-                                ห้อง:
-                                <strong>ม.3/[กรอกห้อง]</strong>
-                            </p>
-
-                            <div class="tiny-sticker">
-                                ✨ this is my chapter
-                            </div>
-
-                        </div>
-
-                    </div>
-
-                </div>
-
-            </div>
-
-        </section>
-
-
-        <!-- School Highlights -->
-        <section class="section-space reveal">
-
-            <div class="section-heading">
-                <span class="heading-sticker">📝 SCHOOL NOTES</span>
-                <h2>My School Highlights</h2>
-            </div>
-
-            <div class="highlight-grid">
-
-                <div class="highlight-note green-note rotate-left">
-                    <span>🏫</span>
-                    <h3>โรงเรียน</h3>
-                    <p>[กรอกชื่อโรงเรียน]</p>
-                </div>
-
-                <div class="highlight-note pink-note rotate-right">
-                    <span>📚</span>
-                    <h3>ระดับชั้น</h3>
-                    <p>ม.3/[กรอกห้อง]</p>
-                </div>
-
-                <div class="highlight-note blue-note rotate-small">
-                    <span>🪑</span>
-                    <h3>ห้องเรียน</h3>
-                    <p>[กรอกข้อมูล]</p>
-                </div>
-
-                <div class="highlight-note yellow-note rotate-right">
-                    <span>❤️</span>
-                    <h3>วิชาที่ชอบ</h3>
-                    <p>[กรอกวิชาที่ชอบ]</p>
-                </div>
-
-            </div>
-
-        </section>
-
-
-        <!-- Stationery -->
-        <section class="stationery-section reveal">
-
-            <div class="stationery-paper">
-
-                <div class="pencil-decoration">
-                    ✏️
-                </div>
-
-                <h2>📖 A Note To Myself</h2>
-
-                <p>
-                    “การเรียนรู้ทุกวัน แม้จะเป็นก้าวเล็ก ๆ
-                    ก็ยังพาเราเข้าใกล้ความฝันมากขึ้น”
-                </p>
-
-                <div class="paper-line"></div>
-                <div class="paper-line"></div>
-                <div class="paper-line"></div>
-
-                <span class="stationery-sign">
-                    — My Little Journal 🍀
-                </span>
-
-            </div>
-
-        </section>
-
-    </main>
-
-
-    <footer class="site-footer">
-        <div class="footer-paper">
-
-            <div class="footer-main">
-
-                <div>
-                    <h3>🎓 SCHOOL JOURNAL</h3>
-                    <p>My journey of learning.</p>
-                </div>
-
-                <div class="footer-links">
-                    <a href="index.html">หน้าแรก</a>
-                    <a href="profile.html">ประวัติส่วนตัว</a>
-                    <a href="hobby.html">งานอดิเรก</a>
-                    <a href="contact.html">ติดต่อ</a>
-                </div>
-
-            </div>
-
-            <div class="footer-bottom">
-                <span>📚 Learn • Grow • Create</span>
-                <span>PAGE 03 / 05</span>
-            </div>
+                <!-- ✏️ แก้วันเกิดตรงนี้ -->
+                <strong>YOUR BIRTHDAY</strong>
+            </article>
 
         </div>
-    </footer>
+    </div>
+</section>
 
+<section class="section-space">
+
+    <div class="section-heading reveal slide-up">
+        <span class="section-number">02</span>
+        <div>
+            <span class="eyebrow">things about me</span>
+            <h2>ตัวฉันในหลาย ๆ มุม 🌿</h2>
+        </div>
+    </div>
+
+    <div class="about-collage">
+
+        <article class="scrap-card paper pink-paper rotate-left reveal slide-up">
+            <span class="card-icon">💚</span>
+            <span class="mini-label">MY PERSONALITY</span>
+            <h3>นิสัยของฉัน</h3>
+            <!-- ✏️ แก้ข้อมูลส่วนตัวตรงนี้ -->
+            <p>
+                เป็นคนที่ชอบเรียนรู้สิ่งใหม่ ๆ
+                สนใจเรื่องที่ตัวเองชอบ และพยายาม
+                ทำสิ่งต่าง ๆ ให้ดีที่สุด
+            </p>
+        </article>
+
+        <article class="scrap-card paper blue-paper rotate-right reveal slide-up delay-1">
+            <span class="card-icon">🎧</span>
+            <span class="mini-label">I LIKE</span>
+            <h3>สิ่งที่ฉันชอบ</h3>
+            <!-- ✏️ แก้ข้อมูลสิ่งที่ชอบตรงนี้ -->
+            <p>
+                ฟังเพลง 🎵<br>
+                ดูหนัง / ซีรีส์ 🎬<br>
+                เล่นเกม 🎮<br>
+                ถ่ายรูป 📷
+            </p>
+        </article>
+
+        <article class="scrap-card paper yellow-paper reveal slide-up delay-2">
+            <span class="card-icon">🌟</span>
+            <span class="mini-label">MY DREAM</span>
+            <h3>ความฝันของฉัน</h3>
+            <!-- ✏️ แก้ข้อมูลความฝันตรงนี้ -->
+            <p>
+                อยากพัฒนาตัวเองในสิ่งที่สนใจ
+                และเติบโตขึ้นเป็นคนที่สามารถ
+                ทำสิ่งที่ตัวเองรักได้
+            </p>
+        </article>
+
+    </div>
+</section>
+
+<section class="memory-strip paper reveal scale-in">
+    <span class="memory-icon">📖</span>
+    <div>
+        <span class="eyebrow">journal entry</span>
+        <h2>“ฉันยังมีอีกหลายหน้าให้เขียนต่อ...”</h2>
+        <p class="handwritten">next chapter loading... ✨</p>
+    </div>
+    <span class="memory-flower">🌸</span>
+</section>
+
+<footer class="site-footer paper">
+    <div>
+        <strong>🍎 MY LITTLE DIGITAL JOURNAL</strong>
+        <p>My little story, one page at a time. ♡</p>
+    </div>
+
+    <div class="footer-links">
+        <a href="index.html">Home</a>
+        <a href="profile.html">Profile</a>
+        <a href="education.html">Education</a>
+        <a href="hobby.html">Hobby</a>
+        <a href="contact.html">Contact</a>
+    </div>
+
+    <div class="footer-stamp">MADE WITH ♡</div>
+</footer>
+
+</main>
+
+<div class="music-player paper" id="musicPlayer">
+    <div class="music-cd" id="musicCd">💿</div>
+
+    <div class="music-info">
+        <strong>my little soundtrack 🎵</strong>
+        <span id="musicStatus">Paused</span>
+    </div>
+
+    <button id="playMusic" class="music-control" aria-label="เล่นเพลง">▶</button>
+    <button id="pauseMusic" class="music-control" aria-label="หยุดเพลง">❚❚</button>
+
+    <label class="volume-wrap">
+        🔊
+        <input type="range" id="volumeControl"
+               min="0" max="1" step="0.05" value="0.5">
+    </label>
+
+    <!-- ✏️ ใส่เพลงของคุณที่ music/music.mp3 -->
+    <audio id="backgroundMusic" loop preload="metadata">
+        <source src="music/music.mp3" type="audio/mpeg">
+    </audio>
+</div>
+
+<script src="script.js"></script>
 </body>
 </html>
