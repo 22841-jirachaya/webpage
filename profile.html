@@ -1,265 +1,453 @@
 <!DOCTYPE html>
 <html lang="th">
 <head>
+
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="My Profile - My Little Digital Journal">
-    <title>👤 Profile — My Little Digital Journal</title>
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <meta name="description"
+          content="ประวัติส่วนตัว - My Little Digital Journal">
+
+    <title>ประวัติส่วนตัว | My Little Digital Journal</title>
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Itim&family=Kalam:wght@400;700&family=Mitr:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+    <link href="https://fonts.googleapis.com/css2?family=Itim&family=Kalam:wght@400;700&family=Mitr:wght@300;400;500;600&display=swap"
+          rel="stylesheet">
 
     <link rel="stylesheet" href="style.css">
+
 </head>
 
-<body data-page="profile">
+<body>
 
-<div class="background-decoration" aria-hidden="true">
-    <span class="float-deco deco-apple">🍎</span>
-    <span class="float-deco deco-flower">🌸</span>
-    <span class="float-deco deco-leaf">🌿</span>
-    <span class="float-deco deco-sparkle">✨</span>
-    <span class="float-deco deco-heart">♡</span>
-    <span class="float-deco deco-star">⭐</span>
-</div>
+    <div class="paper-background"></div>
 
-<div id="appleCursor" class="apple-cursor" aria-hidden="true">
-    <span class="cursor-leaf">◜</span>
-</div>
+    <div class="floating-decoration decoration-1">🍎</div>
+    <div class="floating-decoration decoration-3">🌿</div>
+    <div class="floating-decoration decoration-4">✨</div>
+    <div class="floating-decoration decoration-6">⭐</div>
 
-<div id="particleLayer" class="particle-layer" aria-hidden="true"></div>
 
-<main class="page-shell">
+    <!-- HEADER -->
 
-<header class="site-header paper">
-    <div class="tape tape-top-left"></div>
-    <div class="paperclip">📎</div>
+    <header class="site-header">
 
-    <a href="index.html" class="brand">
-        <span class="brand-icon">🍎</span>
-        <span>
-            <strong>MY LITTLE</strong>
-            <small>DIGITAL JOURNAL</small>
-        </span>
-    </a>
+        <nav class="navbar container">
 
-    <button class="menu-toggle" id="menuToggle"
-            aria-label="เปิดเมนู"
-            aria-expanded="false">☰</button>
+            <a href="index.html" class="brand">
 
-    <nav class="main-nav" id="mainNav">
-        <a href="index.html" data-nav="home">หน้าแรก</a>
-        <a href="profile.html" data-nav="profile">ประวัติส่วนตัว</a>
-        <a href="education.html" data-nav="education">การศึกษา</a>
-        <a href="hobby.html" data-nav="hobby">งานอดิเรก</a>
-        <a href="contact.html" data-nav="contact">ติดต่อ</a>
-    </nav>
+                <span class="brand-apple">🍎</span>
 
-    <span class="nav-sticker">about me 🌷</span>
-</header>
+                <span class="brand-text">
+                    <strong>MY LITTLE</strong>
+                    <small>digital journal</small>
+                </span>
 
-<section class="page-title paper reveal slide-up">
-    <span class="page-icon">👤</span>
-    <div>
-        <span class="eyebrow">page 02 — personal journal</span>
-        <h1>ประวัติส่วนตัวของฉัน</h1>
-        <p>เรื่องเล็ก ๆ ที่รวมกันกลายเป็นตัวฉันในวันนี้ ♡</p>
-    </div>
-    <span class="page-doodle">✦♡✦</span>
-</section>
+            </a>
 
-<section class="profile-layout section-space">
+            <button class="menu-toggle"
+                    aria-label="เปิดเมนู"
+                    aria-expanded="false">
 
-    <div class="profile-photo-area reveal slide-left">
+                <span></span>
+                <span></span>
+                <span></span>
 
-        <div class="polaroid profile-polaroid">
-            <div class="photo-tape"></div>
+            </button>
 
-            <!-- ✏️ ใส่รูป Profile ของคุณตรงนี้ -->
-            <img
-                src="images/profile.jpg"
-                alt="รูปโปรไฟล์"
-                class="safe-image"
-                data-placeholder="profile"
-            >
+            <div class="nav-menu">
 
-            <div class="polaroid-caption">
-                <!-- ✏️ แก้ชื่อของคุณตรงนี้ -->
-                <strong>YOUR NAME ♡</strong>
-                <span>this is me!</span>
+                <a href="index.html" class="nav-link">
+                    🏠 หน้าแรก
+                </a>
+
+                <a href="profile.html" class="nav-link active">
+                    👤 ประวัติส่วนตัว
+                </a>
+
+                <a href="education.html" class="nav-link">
+                    🎓 การศึกษา
+                </a>
+
+                <a href="hobby.html" class="nav-link">
+                    🎮 งานอดิเรก
+                </a>
+
+                <a href="contact.html" class="nav-link">
+                    💌 ติดต่อ
+                </a>
+
             </div>
+
+        </nav>
+
+    </header>
+
+
+    <main>
+
+        <!-- PAGE HERO -->
+
+        <section class="page-hero section">
+
+            <div class="container">
+
+                <div class="page-title reveal">
+
+                    <span class="mini-label">
+                        📖 PAGE 01 · ABOUT ME
+                    </span>
+
+                    <h1>
+                        ประวัติส่วนตัว
+                        <span>♡</span>
+                    </h1>
+
+                    <p class="handwriting">
+                        A little page about me...
+                    </p>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- PROFILE -->
+
+        <section class="section">
+
+            <div class="container profile-layout">
+
+                <!-- PHOTO -->
+
+                <div class="profile-visual reveal slide-left">
+
+                    <div class="profile-polaroid polaroid rotate-left">
+
+                        <div class="photo-wrap">
+
+                            <img
+                                src="images/profile.jpg"
+                                alt="รูปโปรไฟล์ของฉัน"
+                                class="safe-image"
+                            >
+
+                            <div class="photo-placeholder">
+                                🍎
+                                <span>YOUR PHOTO</span>
+                            </div>
+
+                        </div>
+
+                        <div class="polaroid-caption">
+
+                            <strong>[ชื่อเล่น]</strong>
+
+                            <span class="handwriting">
+                                student life ♡
+                            </span>
+
+                        </div>
+
+                    </div>
+
+                    <div class="tape profile-tape"></div>
+
+                    <div class="profile-sticker">
+                        🌸
+                    </div>
+
+                    <div class="profile-doodle">
+                        ✦
+                    </div>
+
+                </div>
+
+
+                <!-- INFO -->
+
+                <div class="profile-info reveal slide-right">
+
+                    <span class="section-kicker">
+                        ✿ nice to meet you ✿
+                    </span>
+
+                    <h2>
+                        สวัสดี! ฉันคือ
+                        <span class="highlight-text">
+                            [ชื่อของฉัน]
+                        </span>
+                    </h2>
+
+                    <p>
+                        ฉันเป็นนักเรียนชั้นมัธยมศึกษาปีที่ 3
+                        และเว็บไซต์นี้คือพื้นที่เล็ก ๆ
+                        ที่ฉันสร้างขึ้นเพื่อแนะนำตัวเอง
+                        และบันทึกสิ่งที่ฉันสนใจ
+                    </p>
+
+
+                    <div class="info-grid">
+
+                        <div class="info-item">
+                            <span class="info-icon">👤</span>
+                            <div>
+                                <small>ชื่อเล่น</small>
+                                <strong>[ชื่อเล่น]</strong>
+                            </div>
+                        </div>
+
+                        <div class="info-item">
+                            <span class="info-icon">🎂</span>
+                            <div>
+                                <small>อายุ</small>
+                                <strong>[อายุ] ปี</strong>
+                            </div>
+                        </div>
+
+                        <div class="info-item">
+                            <span class="info-icon">📅</span>
+                            <div>
+                                <small>วันเกิด</small>
+                                <strong>[วัน / เดือน / ปี]</strong>
+                            </div>
+                        </div>
+
+                        <div class="info-item">
+                            <span class="info-icon">🏫</span>
+                            <div>
+                                <small>โรงเรียน</small>
+                                <strong>[ชื่อโรงเรียน]</strong>
+                            </div>
+                        </div>
+
+                        <div class="info-item">
+                            <span class="info-icon">📚</span>
+                            <div>
+                                <small>ระดับชั้น</small>
+                                <strong>ม.3/[ห้อง]</strong>
+                            </div>
+                        </div>
+
+                        <div class="info-item">
+                            <span class="info-icon">📍</span>
+                            <div>
+                                <small>จังหวัด</small>
+                                <strong>[จังหวัด]</strong>
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- ABOUT ME -->
+
+        <section class="section">
+
+            <div class="container">
+
+                <div class="about-paper reveal">
+
+                    <div class="paperclip">📎</div>
+
+                    <div class="about-heading">
+
+                        <span class="mini-label">
+                            📝 MY STORY
+                        </span>
+
+                        <h2>
+                            เกี่ยวกับฉัน
+                        </h2>
+
+                    </div>
+
+                    <div class="about-content">
+
+                        <div class="about-main">
+
+                            <p>
+                                ฉันเป็นคนที่ชอบเรียนรู้สิ่งใหม่ ๆ
+                                และมักจะสนใจสิ่งต่าง ๆ รอบตัว
+                                ฉันชอบใช้เวลาว่างไปกับงานอดิเรก
+                                และกิจกรรมที่ทำให้รู้สึกสนุก
+                            </p>
+
+                            <p>
+                                ฉันเชื่อว่าการเรียนรู้ไม่ได้เกิดขึ้น
+                                เฉพาะในห้องเรียนเท่านั้น
+                                แต่ยังเกิดจากประสบการณ์
+                                ความผิดพลาด และสิ่งเล็ก ๆ
+                                ที่เราได้พบเจอในแต่ละวัน
+                            </p>
+
+                        </div>
+
+                        <div class="quote-note rotate-right">
+
+                            <span class="big-quote">“</span>
+
+                            <p class="handwriting">
+                                Be curious.<br>
+                                Be creative.<br>
+                                Be yourself. ♡
+                            </p>
+
+                            <span>— my little reminder</span>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- INTERESTS -->
+
+        <section class="section">
+
+            <div class="container">
+
+                <div class="section-heading reveal">
+
+                    <span class="section-kicker">
+                        🌱 MY LITTLE THINGS
+                    </span>
+
+                    <h2>
+                        สิ่งที่เป็นตัวฉัน
+                    </h2>
+
+                </div>
+
+                <div class="interest-grid">
+
+                    <div class="interest-card reveal rotate-card">
+                        <span>🎮</span>
+                        <h3>งานอดิเรก</h3>
+                        <p>[กรอกงานอดิเรก]</p>
+                    </div>
+
+                    <div class="interest-card reveal rotate-card delay-1">
+                        <span>⭐</span>
+                        <h3>วิชาที่ชอบ</h3>
+                        <p>[กรอกวิชาที่ชอบ]</p>
+                    </div>
+
+                    <div class="interest-card reveal rotate-card delay-2">
+                        <span>💡</span>
+                        <h3>ความสนใจ</h3>
+                        <p>[กรอกความสนใจ]</p>
+                    </div>
+
+                    <div class="interest-card reveal rotate-card delay-3">
+                        <span>🌈</span>
+                        <h3>สิ่งที่อยากเรียนรู้</h3>
+                        <p>[กรอกสิ่งที่อยากเรียนรู้]</p>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- GOAL -->
+
+        <section class="section">
+
+            <div class="container">
+
+                <div class="goal-board reveal scale-in">
+
+                    <div class="goal-star">⭐</div>
+
+                    <span class="section-kicker">
+                        🎀 LITTLE DREAM BOARD
+                    </span>
+
+                    <h2>
+                        เป้าหมายและความฝัน
+                    </h2>
+
+                    <p>
+                        [เขียนเป้าหมายหรือความฝันของคุณที่นี่]
+                    </p>
+
+                    <div class="goal-tags">
+
+                        <span>🌱 Keep Growing</span>
+                        <span>📚 Keep Learning</span>
+                        <span>✨ Keep Creating</span>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <footer class="site-footer">
+
+        <div class="container footer-grid">
+
+            <div>
+
+                <div class="footer-brand">
+                    🍎 My Little Digital Journal
+                </div>
+
+                <p>
+                    A tiny digital notebook about me.
+                </p>
+
+            </div>
+
+            <div>
+
+                <h4>Pages</h4>
+
+                <div class="footer-links">
+                    <a href="index.html">หน้าแรก</a>
+                    <a href="profile.html">ประวัติส่วนตัว</a>
+                    <a href="education.html">การศึกษา</a>
+                    <a href="hobby.html">งานอดิเรก</a>
+                    <a href="contact.html">ติดต่อ</a>
+                </div>
+
+            </div>
+
         </div>
 
-        <div class="mini-note note-pink profile-note">
-            <span>📌 fun fact</span>
-            <p>ฉันชอบเก็บเรื่องราวเล็ก ๆ<br>ไว้ในความทรงจำ</p>
+        <div class="footer-bottom">
+            © 2026 [ชื่อของฉัน] · Made with 🍎
         </div>
 
-        <div class="profile-stamp">HELLO<br>♡<br>ME</div>
-    </div>
+    </footer>
 
-    <div class="profile-information">
 
-        <article class="info-note paper green-paper reveal slide-right delay-1">
-            <div class="note-pin">📎</div>
+    <script src="script.js"></script>
 
-            <span class="mini-label">WHO AM I?</span>
-
-            <!-- ✏️ แก้ชื่อของคุณตรงนี้ -->
-            <h2>สวัสดี! ฉันชื่อ YOUR NAME 🍎</h2>
-
-            <!-- ✏️ แก้ข้อความแนะนำตัวตรงนี้ -->
-            <p>
-                ฉันเป็นนักเรียนชั้นมัธยมศึกษาปีที่ 3
-                ที่ชอบเรียนรู้สิ่งใหม่ ๆ และสนใจในสิ่งต่าง ๆ
-                รอบตัว เว็บไซต์นี้เป็นเหมือนสมุดเล่มเล็ก ๆ
-                ที่รวบรวมเรื่องราวเกี่ยวกับฉันเอาไว้
-            </p>
-        </article>
-
-        <div class="info-grid">
-
-            <article class="small-info paper reveal slide-up delay-1">
-                <span>🏷️</span>
-                <small>ชื่อเล่น</small>
-
-                <!-- ✏️ แก้ชื่อเล่นตรงนี้ -->
-                <strong>YOUR NICKNAME</strong>
-            </article>
-
-            <article class="small-info paper reveal slide-up delay-2">
-                <span>🎒</span>
-                <small>ระดับชั้น</small>
-
-                <!-- ✏️ แก้ระดับชั้นตรงนี้ -->
-                <strong>ม.3</strong>
-            </article>
-
-            <article class="small-info paper reveal slide-up delay-3">
-                <span>🏫</span>
-                <small>โรงเรียน</small>
-
-                <!-- ✏️ แก้ข้อมูลโรงเรียนตรงนี้ -->
-                <strong>YOUR SCHOOL</strong>
-            </article>
-
-            <article class="small-info paper reveal slide-up delay-4">
-                <span>🎂</span>
-                <small>วันเกิด</small>
-
-                <!-- ✏️ แก้วันเกิดตรงนี้ -->
-                <strong>YOUR BIRTHDAY</strong>
-            </article>
-
-        </div>
-    </div>
-</section>
-
-<section class="section-space">
-
-    <div class="section-heading reveal slide-up">
-        <span class="section-number">02</span>
-        <div>
-            <span class="eyebrow">things about me</span>
-            <h2>ตัวฉันในหลาย ๆ มุม 🌿</h2>
-        </div>
-    </div>
-
-    <div class="about-collage">
-
-        <article class="scrap-card paper pink-paper rotate-left reveal slide-up">
-            <span class="card-icon">💚</span>
-            <span class="mini-label">MY PERSONALITY</span>
-            <h3>นิสัยของฉัน</h3>
-            <!-- ✏️ แก้ข้อมูลส่วนตัวตรงนี้ -->
-            <p>
-                เป็นคนที่ชอบเรียนรู้สิ่งใหม่ ๆ
-                สนใจเรื่องที่ตัวเองชอบ และพยายาม
-                ทำสิ่งต่าง ๆ ให้ดีที่สุด
-            </p>
-        </article>
-
-        <article class="scrap-card paper blue-paper rotate-right reveal slide-up delay-1">
-            <span class="card-icon">🎧</span>
-            <span class="mini-label">I LIKE</span>
-            <h3>สิ่งที่ฉันชอบ</h3>
-            <!-- ✏️ แก้ข้อมูลสิ่งที่ชอบตรงนี้ -->
-            <p>
-                ฟังเพลง 🎵<br>
-                ดูหนัง / ซีรีส์ 🎬<br>
-                เล่นเกม 🎮<br>
-                ถ่ายรูป 📷
-            </p>
-        </article>
-
-        <article class="scrap-card paper yellow-paper reveal slide-up delay-2">
-            <span class="card-icon">🌟</span>
-            <span class="mini-label">MY DREAM</span>
-            <h3>ความฝันของฉัน</h3>
-            <!-- ✏️ แก้ข้อมูลความฝันตรงนี้ -->
-            <p>
-                อยากพัฒนาตัวเองในสิ่งที่สนใจ
-                และเติบโตขึ้นเป็นคนที่สามารถ
-                ทำสิ่งที่ตัวเองรักได้
-            </p>
-        </article>
-
-    </div>
-</section>
-
-<section class="memory-strip paper reveal scale-in">
-    <span class="memory-icon">📖</span>
-    <div>
-        <span class="eyebrow">journal entry</span>
-        <h2>“ฉันยังมีอีกหลายหน้าให้เขียนต่อ...”</h2>
-        <p class="handwritten">next chapter loading... ✨</p>
-    </div>
-    <span class="memory-flower">🌸</span>
-</section>
-
-<footer class="site-footer paper">
-    <div>
-        <strong>🍎 MY LITTLE DIGITAL JOURNAL</strong>
-        <p>My little story, one page at a time. ♡</p>
-    </div>
-
-    <div class="footer-links">
-        <a href="index.html">Home</a>
-        <a href="profile.html">Profile</a>
-        <a href="education.html">Education</a>
-        <a href="hobby.html">Hobby</a>
-        <a href="contact.html">Contact</a>
-    </div>
-
-    <div class="footer-stamp">MADE WITH ♡</div>
-</footer>
-
-</main>
-
-<div class="music-player paper" id="musicPlayer">
-    <div class="music-cd" id="musicCd">💿</div>
-
-    <div class="music-info">
-        <strong>my little soundtrack 🎵</strong>
-        <span id="musicStatus">Paused</span>
-    </div>
-
-    <button id="playMusic" class="music-control" aria-label="เล่นเพลง">▶</button>
-    <button id="pauseMusic" class="music-control" aria-label="หยุดเพลง">❚❚</button>
-
-    <label class="volume-wrap">
-        🔊
-        <input type="range" id="volumeControl"
-               min="0" max="1" step="0.05" value="0.5">
-    </label>
-
-    <!-- ✏️ ใส่เพลงของคุณที่ music/music.mp3 -->
-    <audio id="backgroundMusic" loop preload="metadata">
-        <source src="music/music.mp3" type="audio/mpeg">
-    </audio>
-</div>
-
-<script src="script.js"></script>
 </body>
 </html>
