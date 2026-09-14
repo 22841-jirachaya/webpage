@@ -2,304 +2,576 @@
 <html lang="th">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="MY LITTLE DIGITAL JOURNAL - Student Portfolio">
-    <title>🍎 My Little Digital Journal</title>
 
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <meta name="description"
+          content="My Little Digital Journal - Student Portfolio">
+
+    <title>My Little Digital Journal 🍎</title>
+
+    <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Itim&family=Kalam:wght@400;700&family=Mitr:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+    <link href="https://fonts.googleapis.com/css2?family=Itim&family=Kalam:wght@400;700&family=Mitr:wght@300;400;500;600&display=swap"
+          rel="stylesheet">
 
     <link rel="stylesheet" href="style.css">
 </head>
 
-<body data-page="home">
+<body class="home-page">
 
-    <!-- =========================
+    <!-- =====================================================
          BACKGROUND DECORATIONS
-    ========================== -->
-    <div class="background-decoration" aria-hidden="true">
-        <span class="float-deco deco-apple">🍎</span>
-        <span class="float-deco deco-flower">🌸</span>
-        <span class="float-deco deco-leaf">🌿</span>
-        <span class="float-deco deco-sparkle">✨</span>
-        <span class="float-deco deco-heart">♡</span>
-        <span class="float-deco deco-star">⭐</span>
-        <span class="float-deco deco-ribbon">🎀</span>
-    </div>
+    ====================================================== -->
 
-    <!-- =========================
-         APPLE CURSOR
-    ========================== -->
-    <div id="appleCursor" class="apple-cursor" aria-hidden="true">
-        <span class="cursor-leaf">◜</span>
-    </div>
+    <div class="paper-background"></div>
 
-    <div id="particleLayer" class="particle-layer" aria-hidden="true"></div>
+    <div class="floating-decoration decoration-1">🍎</div>
+    <div class="floating-decoration decoration-2">🌸</div>
+    <div class="floating-decoration decoration-3">🌿</div>
+    <div class="floating-decoration decoration-4">✨</div>
+    <div class="floating-decoration decoration-5">♡</div>
+    <div class="floating-decoration decoration-6">⭐</div>
+    <div class="floating-decoration decoration-7">🎀</div>
+    <div class="floating-decoration decoration-8">🧸</div>
 
-    <!-- =========================
-         PAGE SHEET
-    ========================== -->
-    <main class="page-shell">
+    <!-- =====================================================
+         HEADER / NAVIGATION
+    ====================================================== -->
 
-        <!-- =========================
-             NAVIGATION
-        ========================== -->
-        <header class="site-header paper">
-            <div class="tape tape-top-left"></div>
-            <div class="paperclip">📎</div>
+    <header class="site-header">
+        <nav class="navbar container">
 
             <a href="index.html" class="brand">
-                <span class="brand-icon">🍎</span>
-                <span>
+                <span class="brand-apple">🍎</span>
+
+                <span class="brand-text">
                     <strong>MY LITTLE</strong>
-                    <small>DIGITAL JOURNAL</small>
+                    <small>digital journal</small>
                 </span>
             </a>
 
-            <button class="menu-toggle" id="menuToggle"
+            <button class="menu-toggle"
                     aria-label="เปิดเมนู"
                     aria-expanded="false">
-                ☰
+                <span></span>
+                <span></span>
+                <span></span>
             </button>
 
-            <nav class="main-nav" id="mainNav">
-                <a href="index.html" data-nav="home">หน้าแรก</a>
-                <a href="profile.html" data-nav="profile">ประวัติส่วนตัว</a>
-                <a href="education.html" data-nav="education">การศึกษา</a>
-                <a href="hobby.html" data-nav="hobby">งานอดิเรก</a>
-                <a href="contact.html" data-nav="contact">ติดต่อ</a>
-            </nav>
+            <div class="nav-menu">
 
-            <span class="nav-sticker">hello! ✨</span>
-        </header>
+                <a href="index.html" class="nav-link active">
+                    <span>🏠</span>
+                    หน้าแรก
+                </a>
 
-        <!-- =========================
-             HERO
-        ========================== -->
-        <section class="hero section-space">
+                <a href="profile.html" class="nav-link">
+                    <span>👤</span>
+                    ประวัติส่วนตัว
+                </a>
 
-            <div class="hero-copy paper reveal slide-left">
+                <a href="education.html" class="nav-link">
+                    <span>🎓</span>
+                    การศึกษา
+                </a>
 
-                <div class="tape tape-top-right"></div>
-                <span class="mini-label">📖 MY JOURNAL — 2026</span>
+                <a href="hobby.html" class="nav-link">
+                    <span>🎮</span>
+                    งานอดิเรก
+                </a>
 
-                <!-- ✏️ แก้ชื่อของคุณตรงนี้ -->
-                <h1>
-                    Hello! I'm
-                    <span class="highlight-green">YOUR NAME</span>
-                    <span class="tiny-apple">🍎</span>
-                </h1>
+                <a href="contact.html" class="nav-link">
+                    <span>💌</span>
+                    ติดต่อ
+                </a>
 
-                <!-- ✏️ แก้คำโปรยของคุณตรงนี้ -->
-                <p class="hero-tagline">
-                    นักเรียน ม.3 คนหนึ่งที่กำลังเขียนเรื่องราว
-                    ของตัวเองทีละหน้า ✨
-                </p>
-
-                <!-- ✏️ แก้ข้อความแนะนำตัวตรงนี้ -->
-                <p class="hero-description">
-                    ยินดีต้อนรับเข้าสู่สมุด Journal เล็ก ๆ ของฉัน
-                    ที่รวมเรื่องราว ความสนใจ งานอดิเรก การเรียน
-                    และสิ่งต่าง ๆ ที่ฉันภูมิใจเอาไว้ในที่เดียว
-                </p>
-
-                <div class="badge-row">
-                    <span class="sticker badge-green">🎒 Student</span>
-                    <span class="sticker badge-pink">🌷 M.3</span>
-                    <span class="sticker badge-yellow">✨ Dreamer</span>
-                </div>
-
-                <div class="hero-buttons">
-                    <a href="profile.html" class="journal-btn primary-btn">
-                        <span>รู้จักฉันมากขึ้น</span>
-                        <b>→</b>
-                    </a>
-
-                    <a href="hobby.html" class="journal-btn secondary-btn">
-                        <span>ดูงานอดิเรกของฉัน</span>
-                        <b>→</b>
-                    </a>
-                </div>
-
-                <div class="hand-note">
-                    <span>✎ little note</span>
-                    <p>“ทุกหน้าคือเรื่องราว<br>ที่ฉันกำลังเขียนอยู่”</p>
-                </div>
-
-                <div class="doodle doodle-home">✦ ♡ ✧</div>
             </div>
 
-            <div class="hero-visual reveal slide-right">
+            <div class="nav-sticker">♡ hello! ♡</div>
 
-                <div class="photo-scene">
+        </nav>
+    </header>
 
-                    <span class="scene-sticker sticker-one">🍎</span>
-                    <span class="scene-sticker sticker-two">🌸</span>
-                    <span class="scene-sticker sticker-three">✨</span>
 
-                    <div class="polaroid main-polaroid">
-                        <div class="photo-tape"></div>
+    <!-- =====================================================
+         MAIN
+    ====================================================== -->
 
-                        <!-- ✏️ ใส่รูป Profile ของคุณตรงนี้ -->
-                        <img
-                            src="images/profile.jpg"
-                            alt="รูปโปรไฟล์ของนักเรียน"
-                            class="safe-image"
-                            data-placeholder="profile"
-                        >
+    <main>
+
+        <!-- HERO -->
+
+        <section class="hero section">
+
+            <div class="container hero-grid">
+
+                <!-- HERO TEXT -->
+
+                <div class="hero-content reveal slide-left">
+
+                    <div class="mini-label">
+                        ✏️ MY DIGITAL JOURNAL
+                    </div>
+
+                    <p class="handwriting greeting">
+                        Hello, welcome to my little world! ♡
+                    </p>
+
+                    <h1>
+                        Hi! I'm
+                        <span class="name-highlight">
+                            [ชื่อของฉัน]
+                        </span>
+                        🍎
+                    </h1>
+
+                    <div class="hero-subtitle">
+                        นักเรียนชั้นมัธยมศึกษาปีที่ 3
+                    </div>
+
+                    <p class="hero-description">
+                        ยินดีต้อนรับเข้าสู่สมุด Journal ออนไลน์ของฉัน
+                        ที่รวบรวมเรื่องราวเกี่ยวกับตัวตน การเรียน
+                        งานอดิเรก ความสนใจ และสิ่งเล็ก ๆ
+                        ที่ทำให้แต่ละวันของฉันมีความหมาย
+                    </p>
+
+                    <div class="hero-tags">
+                        <span>🎀 Student</span>
+                        <span>📖 Journal</span>
+                        <span>✨ Creative</span>
+                    </div>
+
+                    <div class="hero-buttons">
+
+                        <a href="profile.html"
+                           class="btn btn-primary">
+                            <span>♡</span>
+                            รู้จักฉันมากขึ้น
+                            <span>→</span>
+                        </a>
+
+                        <a href="hobby.html"
+                           class="btn btn-secondary">
+                            🎮 ดูงานอดิเรกของฉัน
+                        </a>
+
+                    </div>
+
+                    <div class="hero-note paper-note rotate-left">
+                        <span class="pin">📌</span>
+                        <p class="handwriting">
+                            little things<br>
+                            make life special ✨
+                        </p>
+                    </div>
+
+                </div>
+
+
+                <!-- HERO PHOTO -->
+
+                <div class="hero-visual reveal slide-right">
+
+                    <div class="doodle-circle"></div>
+
+                    <div class="hero-polaroid polaroid rotate-right">
+
+                        <div class="photo-wrap">
+
+                            <img
+                                src="images/profile.jpg"
+                                alt="รูปโปรไฟล์ของฉัน"
+                                class="safe-image"
+                            >
+
+                            <div class="photo-placeholder">
+                                🍎
+                                <span>YOUR PHOTO</span>
+                            </div>
+
+                        </div>
 
                         <div class="polaroid-caption">
-                            <strong>that's me! ♡</strong>
-                            <span>my little corner</span>
+                            <strong>[ชื่อเล่น]</strong>
+                            <span class="handwriting">
+                                that's me! ♡
+                            </span>
                         </div>
+
                     </div>
 
-                    <div class="mini-note note-yellow">
-                        <span>🌱 currently</span>
-                        <strong>growing & learning</strong>
+                    <div class="sticker sticker-star">
+                        ⭐
                     </div>
 
-                    <div class="stamp">
-                        <span>★</span>
-                        <small>JOURNAL</small>
-                        <span>2026</span>
+                    <div class="sticker sticker-apple">
+                        🍎
                     </div>
+
+                    <div class="sticker sticker-flower">
+                        🌸
+                    </div>
+
+                    <div class="tape tape-photo"></div>
+
+                    <div class="floating-note">
+                        <span class="handwriting">
+                            nice to meet you!
+                        </span>
+                    </div>
+
                 </div>
 
             </div>
+
         </section>
 
-        <!-- =========================
-             QUICK JOURNAL
-        ========================== -->
-        <section class="section-space">
-            <div class="section-heading reveal slide-up">
-                <span class="section-number">01</span>
-                <div>
-                    <span class="eyebrow">a little peek</span>
-                    <h2>เปิดดูสมุดของฉันกัน ♡</h2>
+
+        <!-- QUICK INTRO -->
+
+        <section class="section intro-section">
+
+            <div class="container">
+
+                <div class="section-heading reveal">
+
+                    <span class="section-kicker">
+                        ✿ a little introduction ✿
+                    </span>
+
+                    <h2>
+                        เปิดสมุดของฉันกันเถอะ 📖
+                    </h2>
+
+                    <p>
+                        ทุกหน้ามีเรื่องราวเล็ก ๆ ที่เป็นตัวฉัน
+                    </p>
+
                 </div>
+
+
+                <div class="journal-grid">
+
+                    <article class="journal-card card-green reveal slide-up">
+
+                        <div class="card-number">01</div>
+
+                        <div class="card-icon">
+                            👤
+                        </div>
+
+                        <h3>About Me</h3>
+
+                        <p>
+                            ทำความรู้จักกับฉัน
+                            ตัวตน ความชอบ และเรื่องราวต่าง ๆ
+                            ที่เป็นส่วนหนึ่งของฉัน
+                        </p>
+
+                        <a href="profile.html"
+                           class="text-link">
+                            เปิดหน้านี้ →
+                        </a>
+
+                    </article>
+
+
+                    <article class="journal-card card-pink reveal slide-up delay-1">
+
+                        <div class="card-number">02</div>
+
+                        <div class="card-icon">
+                            🎓
+                        </div>
+
+                        <h3>Education</h3>
+
+                        <p>
+                            บันทึกเส้นทางการเรียนรู้
+                            ตั้งแต่ประถมศึกษาจนถึงปัจจุบัน
+                        </p>
+
+                        <a href="education.html"
+                           class="text-link">
+                            เปิดหน้านี้ →
+                        </a>
+
+                    </article>
+
+
+                    <article class="journal-card card-blue reveal slide-up delay-2">
+
+                        <div class="card-number">03</div>
+
+                        <div class="card-icon">
+                            🎮
+                        </div>
+
+                        <h3>My Hobbies</h3>
+
+                        <p>
+                            สิ่งที่ฉันชอบทำในเวลาว่าง
+                            ความสนใจ เพลง เกม กีฬา และอีกมากมาย
+                        </p>
+
+                        <a href="hobby.html"
+                           class="text-link">
+                            เปิดหน้านี้ →
+                        </a>
+
+                    </article>
+
+
+                    <article class="journal-card card-yellow reveal slide-up delay-3">
+
+                        <div class="card-number">04</div>
+
+                        <div class="card-icon">
+                            💌
+                        </div>
+
+                        <h3>Contact</h3>
+
+                        <p>
+                            หากต้องการพูดคุยหรือรู้จักกันมากขึ้น
+                            สามารถติดต่อฉันได้ที่นี่
+                        </p>
+
+                        <a href="contact.html"
+                           class="text-link">
+                            เปิดหน้านี้ →
+                        </a>
+
+                    </article>
+
+                </div>
+
             </div>
 
-            <div class="journal-grid">
-
-                <article class="note-card paper green-paper reveal slide-up delay-1">
-                    <span class="paperclip-small">📎</span>
-                    <span class="card-icon">🌿</span>
-                    <span class="mini-label">ABOUT ME</span>
-                    <h3>เรื่องราวของฉัน</h3>
-                    <p>
-                        มาทำความรู้จักตัวฉันให้มากขึ้น
-                        ผ่านหน้าประวัติส่วนตัวเล็ก ๆ นี้
-                    </p>
-                    <a href="profile.html" class="text-link">เปิดหน้า Profile →</a>
-                </article>
-
-                <article class="note-card paper pink-paper reveal slide-up delay-2">
-                    <span class="card-icon">🎓</span>
-                    <span class="mini-label">SCHOOL LIFE</span>
-                    <h3>เส้นทางการเรียน</h3>
-                    <p>
-                        เรื่องราวการเรียนรู้ตั้งแต่วันแรก
-                        จนถึงการเดินทางในช่วง ม.3
-                    </p>
-                    <a href="education.html" class="text-link">ดูการศึกษา →</a>
-                </article>
-
-                <article class="note-card paper yellow-paper reveal slide-up delay-3">
-                    <span class="card-icon">🎨</span>
-                    <span class="mini-label">MY FAVORITES</span>
-                    <h3>สิ่งที่ฉันชอบ</h3>
-                    <p>
-                        งานอดิเรก เพลง เกม รูปภาพ
-                        และสิ่งเล็ก ๆ ที่ทำให้ฉันมีความสุข
-                    </p>
-                    <a href="hobby.html" class="text-link">ดูงานอดิเรก →</a>
-                </article>
-
-            </div>
         </section>
 
-        <!-- =========================
-             LITTLE MESSAGE
-        ========================== -->
-        <section class="quote-section paper reveal scale-in">
-            <div class="tape tape-left"></div>
 
-            <span class="quote-mark">“</span>
+        <!-- MINI GALLERY -->
 
-            <div>
-                <span class="eyebrow">today's little thought</span>
-                <h2>“ไม่ต้องสมบูรณ์แบบทุกหน้า<br>แค่เป็นเรื่องราวของเราก็พอ”</h2>
-                <p class="handwritten">— written somewhere in my journal ♡</p>
+        <section class="section gallery-section">
+
+            <div class="container">
+
+                <div class="section-heading reveal">
+
+                    <span class="section-kicker">
+                        📸 little memories
+                    </span>
+
+                    <h2>
+                        บางหน้าจากสมุดของฉัน
+                    </h2>
+
+                </div>
+
+
+                <div class="memory-grid">
+
+                    <div class="memory-photo memory-large reveal">
+
+                        <div class="tape tape-top"></div>
+
+                        <img
+                            src="images/gallery-1.jpg"
+                            alt="ภาพความทรงจำที่ 1"
+                            class="safe-image"
+                        >
+
+                        <div class="photo-placeholder">
+                            🌸
+                            <span>MEMORY PHOTO</span>
+                        </div>
+
+                        <span class="memory-caption handwriting">
+                            favorite moment ♡
+                        </span>
+
+                    </div>
+
+
+                    <div class="memory-photo memory-small rotate-left reveal">
+
+                        <img
+                            src="images/gallery-2.jpg"
+                            alt="ภาพความทรงจำที่ 2"
+                            class="safe-image"
+                        >
+
+                        <div class="photo-placeholder">
+                            ✨
+                            <span>PHOTO</span>
+                        </div>
+
+                    </div>
+
+
+                    <div class="memory-note paper-note rotate-right reveal">
+
+                        <span class="big-quote">“</span>
+
+                        <p class="handwriting">
+                            Keep learning.<br>
+                            Keep growing.<br>
+                            Keep smiling. ♡
+                        </p>
+
+                        <span class="note-flower">🌿</span>
+
+                    </div>
+
+                </div>
+
             </div>
 
-            <span class="quote-flower">🌼</span>
         </section>
 
-        <!-- =========================
-             FOOTER
-        ========================== -->
-        <footer class="site-footer paper">
-            <div>
-                <strong>🍎 MY LITTLE DIGITAL JOURNAL</strong>
-                <p>My little story, one page at a time. ♡</p>
+
+        <!-- CTA -->
+
+        <section class="section final-cta">
+
+            <div class="container">
+
+                <div class="cta-paper reveal scale-in">
+
+                    <div class="cta-decoration">🍎</div>
+                    <div class="cta-decoration cta-two">✨</div>
+
+                    <span class="section-kicker">
+                        ♡ END OF THIS PAGE ♡
+                    </span>
+
+                    <h2>
+                        แล้วพบกันในหน้าถัดไป!
+                    </h2>
+
+                    <p class="handwriting">
+                        มีอีกหลายเรื่องราวรอให้คุณเปิดอ่าน...
+                    </p>
+
+                    <a href="profile.html"
+                       class="btn btn-primary">
+                        เปิด Journal ต่อ →
+                    </a>
+
+                </div>
+
             </div>
 
-            <div class="footer-links">
-                <a href="index.html">Home</a>
-                <a href="profile.html">Profile</a>
-                <a href="education.html">Education</a>
-                <a href="hobby.html">Hobby</a>
-                <a href="contact.html">Contact</a>
-            </div>
-
-            <div class="footer-stamp">MADE WITH ♡</div>
-        </footer>
+        </section>
 
     </main>
 
-    <!-- =========================
-         MUSIC PLAYER
-    ========================== -->
-    <div class="music-player paper" id="musicPlayer">
 
-        <div class="music-cd" id="musicCd">
+    <!-- =====================================================
+         FOOTER
+    ====================================================== -->
+
+    <footer class="site-footer">
+
+        <div class="container footer-grid">
+
+            <div>
+
+                <div class="footer-brand">
+                    🍎 My Little Digital Journal
+                </div>
+
+                <p>
+                    Student Portfolio ของนักเรียน ม.3
+                    ที่เต็มไปด้วยเรื่องราว ความฝัน
+                    และความสนใจเล็ก ๆ
+                </p>
+
+            </div>
+
+            <div>
+
+                <h4>Pages</h4>
+
+                <div class="footer-links">
+                    <a href="index.html">หน้าแรก</a>
+                    <a href="profile.html">ประวัติส่วนตัว</a>
+                    <a href="education.html">การศึกษา</a>
+                    <a href="hobby.html">งานอดิเรก</a>
+                    <a href="contact.html">ติดต่อ</a>
+                </div>
+
+            </div>
+
+            <div>
+
+                <h4>Made with</h4>
+
+                <p class="handwriting footer-love">
+                    🍎 + 📖 + ✨ + lots of love ♡
+                </p>
+
+            </div>
+
+        </div>
+
+        <div class="footer-bottom">
+            © 2026 [ชื่อของฉัน] · My Little Digital Journal
+        </div>
+
+    </footer>
+
+
+    <!-- =====================================================
+         MUSIC PLAYER
+    ====================================================== -->
+
+    <div class="music-player">
+
+        <audio id="backgroundMusic"
+               loop
+               preload="metadata">
+
+            <source src="music/music.mp3"
+                    type="audio/mpeg">
+
+        </audio>
+
+        <div class="record">
             💿
         </div>
 
         <div class="music-info">
-            <strong>my little soundtrack 🎵</strong>
-            <span id="musicStatus">Paused</span>
+            <strong>My little song ♡</strong>
+            <span>journal playlist</span>
         </div>
 
-        <button id="playMusic" class="music-control" aria-label="เล่นเพลง">
+        <button id="musicToggle"
+                class="music-button"
+                aria-label="เปิดเพลง">
             ▶
         </button>
 
-        <button id="pauseMusic" class="music-control" aria-label="หยุดเพลง">
-            ❚❚
-        </button>
+        <input
+            type="range"
+            id="volumeControl"
+            min="0"
+            max="1"
+            step="0.01"
+            value="0.5"
+            aria-label="ระดับเสียง"
+        >
 
-        <label class="volume-wrap" aria-label="ระดับเสียง">
-            🔊
-            <input
-                type="range"
-                id="volumeControl"
-                min="0"
-                max="1"
-                step="0.05"
-                value="0.5"
-            >
-        </label>
-
-        <!-- ✏️ ใส่เพลงของคุณที่ music/music.mp3 -->
-        <audio id="backgroundMusic" loop preload="metadata">
-            <source src="music/music.mp3" type="audio/mpeg">
-        </audio>
     </div>
 
+
     <script src="script.js"></script>
+
 </body>
 </html>
